@@ -1,0 +1,78 @@
+.LoginView {
+	padding: var(--section-v-whitespace) 0;
+	max-width: var(--container-w);
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.LoginView__Info {
+	overflow-x: hidden;
+}
+
+.LoginView__Info__Heading {
+	text-transform: uppercase;
+	color: var(--text-color);
+	font-size: calc(var(--font-size) * 2.5);
+	text-align: center;
+}
+
+.SlidesWrapper {
+	display: flex;
+	width: 400%;
+	transition: margin-left var(--transition-speed);
+}
+
+.Slide {
+	-ms-flex: 1;
+	flex: 1;
+
+	text-align: center;
+	color: var(--grey);
+	padding: var(--section-v-whitespace);
+}
+
+.Slide__Icon {
+	width: 70px;
+	height: 70px;
+}
+
+.Slide__Icon + .Slide__Icon {
+	margin-left: 0.8rem;	
+}
+
+.Slide__Text {
+	margin-top: 1.4rem;
+	font-size: var(--font-size);
+	line-height: 150%;
+}
+
+@media (min-width: 992px){
+	.LoginView {
+		height: 100vh;
+	}
+
+	.LoginView__Row {
+		display: flex;
+		height: 100%;
+	}
+
+	.LoginView__Row > * {
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	.LoginView__Row > *:first-child {
+		overflow-y: hidden;
+	}
+
+	.LoginView__Row > *:nth-child(2){
+		transform: translateY(3rem);
+		margin-left: 2rem;
+	}
+
+	.Slide__Icon {
+		height: 120px;
+		width: 120px;
+	}
+}	

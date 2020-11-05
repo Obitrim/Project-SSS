@@ -1,0 +1,98 @@
+.LoginForm {
+	box-shadow: var(--light-shadow);
+	border-radius: var(--b-radius);
+	padding: 2rem 1.4rem;
+
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+.LoginForm__Fieldset {
+	border: none;
+}
+
+.LoginForm__Legend {
+	font-weight: bold;
+	font-size: calc(var(--font-size) * 2);
+	color: var(--danger);
+}
+
+.LoginForm__Instruction {
+	margin: 0.5rem 0 1rem;
+	color: var(--grey);
+}
+
+.FormGroup + .FormGroup {
+	margin-top: 1rem;
+}
+
+.FormGroup__Label {
+	display: block;
+	color: var(--dark);
+}
+
+.LoginForm .FormGroup__Input {
+	margin: 0.5rem 0;
+	padding: 0.5rem 1rem;
+	border-radius: 5rem;
+	border: 1px solid var(--grey);
+	width: 100%;
+}
+
+.LoginForm .FormGroup__Input:focus {
+	border-color: var(--danger);
+}
+
+.FormGroup__ErrorLabel {
+	color: var(--danger);
+	font-size: calc(var(--font-size) - 4px) !important;
+	text-transform: lowercase;
+	margin-left: 0.5rem;
+}
+
+.LoginForm__Footer {
+	margin-top: 1.5rem;
+	text-align: center !important;
+}
+
+.LoginForm__Footer > * {
+	display: block;
+	min-width: 50%;
+	margin: 0 auto;
+}
+
+.LoginForm__Footer > *:not(:first-child){
+	margin-top: 0.8rem;
+}
+
+.LoginForm__SubmitBtn,
+.LoginForm__EmailBtn {
+	padding: 0.5rem 2rem;
+	border-radius: 5rem;
+	border: 1px solid var(--danger);
+	transition: var(--transition-speed);
+}
+
+.LoginForm__EmailBtn:hover,
+.LoginForm__SubmitBtn {
+	background-color: var(--danger);
+	color: var(--white);
+}
+
+.LoginForm__EmailBtn,
+.LoginForm__SubmitBtn:hover {
+	background-color: var(--white);
+	color: var(--danger);
+}
+
+.LoginForm__ForgotPasswordBtn {
+	color: var(--grey);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: calc(var(--font-size) - 2px);
+	font-style: italic;
+}
+
+.LoginForm__ForgotPasswordBtn:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.707" height="19.422" viewBox="0 0 21.707 19.422">
+  <g id="financial_assistance" transform="translate(-1 -4)">
+    <path id="Path_95" data-name="Path 95" d="M22.351,25.78C15.125,22.826,5.294,22.529,3.5,22.5v-12H22.351Z" transform="translate(-1.072 -2.787)" fill="#b6dcfe"/>
+    <path id="Path_96" data-name="Path 96" d="M21.851,10.571V25.144C14.864,22.4,5.921,22.049,3.571,22V10.571H21.851M22.422,10H3V22.567s11.425,0,19.422,3.427Z" transform="translate(-0.858 -2.573)" fill="#4788c7"/>
+    <path id="Path_97" data-name="Path 97" d="M22.493,21.143C15.223,19.654,4.39,19.511,2.5,19.5V7.5H22.493Z" transform="translate(-0.643 -1.501)" fill="#b6dcfe"/>
+    <path id="Path_98" data-name="Path 98" d="M21.993,7.571V20.58C15.013,19.21,5.046,19.025,2.571,19V7.571H21.993M22.564,7H2V19.567s12.567,0,20.564,1.714Z" transform="translate(-0.429 -1.286)" fill="#4788c7"/>
+    <path id="Path_99" data-name="Path 99" d="M1.5,4.5H22.635v12H1.5Z" transform="translate(-0.214 -0.214)" fill="#b6dcfe"/>
+    <path id="Path_100" data-name="Path 100" d="M22.135,4.571V16H1.571V4.571H22.135M22.707,4H1V16.567H22.707Z" transform="translate(0 0)" fill="#4788c7"/>
+    <path id="Path_101" data-name="Path 101" d="M21,12a4,4,0,1,1-4-4A4,4,0,0,1,21,12Z" transform="translate(-5.145 -1.715)" fill="#fff"/>
+    <path id="Path_102" data-name="Path 102" d="M33.427,13.714A1.714,1.714,0,1,1,31.714,12,1.714,1.714,0,0,1,33.427,13.714Z" transform="translate(-12.434 -3.43)" fill="#fff"/>
+    <path id="Path_103" data-name="Path 103" d="M7.427,13.714A1.714,1.714,0,1,1,5.714,12,1.714,1.714,0,0,1,7.427,13.714Z" transform="translate(-1.286 -3.43)" fill="#fff"/>
+  </g>
+</svg>

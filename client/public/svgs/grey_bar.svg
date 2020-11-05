@@ -1,0 +1,8 @@
+<svg id="grey_bar" xmlns="http://www.w3.org/2000/svg" width="360" height="44" viewBox="0 0 360 44">
+  <g id="Back_Grey_BG" data-name="Back + Grey BG">
+    <g id="Back_Arrow" data-name="Back Arrow" transform="translate(28.906 17)">
+      <path id="Path_4" data-name="Path 4" d="M9.51,6.781,4.5,11.792l-.405.424.405.424L9.51,17.651l.847-.847-4-4H18.188V11.627H6.36l4-4Z" transform="translate(-4.094 -6.781)" fill="#d50404" stroke="#d50404" stroke-width="1"/>
+    </g>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="360" height="44" fill="#cfcfcf"/>
+  </g>
+</svg>

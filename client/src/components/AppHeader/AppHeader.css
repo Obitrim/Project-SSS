@@ -1,0 +1,88 @@
+.AppHeader {
+	height: var(--header-h);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.AppHeader__Top,
+.AppHeader__Bottom,
+.AppHeader__Top .Container {
+	display: flex;
+	align-items: center;
+}
+
+
+.AppHeader__Top .Container,
+.AppHeader__Bottom .Container {
+	width: 100%;
+	height: 100%;
+}
+
+.AppHeader__Top {
+	height: calc(var(--header-h) * 3 / 5);
+	background-color: var(--danger);
+}
+
+.AppHeader__Top .Container {
+	justify-content: space-between;
+}
+
+.AppName {
+	margin-left: 1rem;
+	color: var(--white);
+	font-weight: 550;
+	font-size: calc(var(--font-size) + 3px);
+}
+
+.AppHeader__Bottom {
+	height: calc(var(--header-h) * 2 / 5);
+	background-color: var(--danger-light);
+}
+
+.AppHeader__Bottom .Container {
+	display: flex;
+}
+
+/*Header searchbox styles*/
+.AppHeader .SearchBox {
+	-ms-flex: 1;
+	flex: 1;
+	max-width: 500px;
+}
+
+.AppHeader__Top .SearchBox {
+	display: none;
+	margin: 0 auto;
+}
+
+.AppHeader__Bottom .SearchBox {
+	margin: 0.3rem 0;
+	margin-left: 1.4rem;
+}
+
+@media (min-width: 768px){
+	.AppHeader__Top .Container {
+		justify-content: flex-start;
+	}
+
+	.AppHeader__Top .SearchBox {
+		display: block;
+	}
+
+	.AppHeader__Bottom .SearchBox {
+		display: none;
+	}
+}
+
+@media (min-width: 992px){
+	.MenuToggler {
+		display: none;
+	}
+
+	.AppName {
+		margin-left: 0;
+	}
+}

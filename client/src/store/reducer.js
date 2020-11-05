@@ -1,9 +1,9 @@
 export default (state, action) => {
 	switch(action.type){
-		case 'OPEN_SIDEBAR':
+		case 'SHOW_SIDEBAR':
 			return {
 				...state,
-				navOpen: action.open
+				sidebarOpen: action.open
 			}
 		default: 
 			return state

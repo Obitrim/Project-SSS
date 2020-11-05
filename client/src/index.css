@@ -2,23 +2,34 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: arial, sans-serif;
 }
 
 :root {
-	--min-sidebar-w: 250px;
-	--sidebar-w: 20vw;
-	--router-view-header-h: 55px;
-	--b-radius: 5px;
+	--container-w: 1200px;
+	--sidebar-width: 270px;
+	--header-h: 100px;
+	--section-v-whitespace: 4rem;
+	--b-radius: 10px;
 	--font-size: 16px;
+	--transition-speed: 0.25s;
+
 	--light-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 
-	--bg-light: #ededed;
-	--danger: #fe2232;
+	--bg-light: #E5E5E5;
+	--danger: #D50404;
+	--danger-light: #D50404d6;
+	--success: #00923F;
+	--light: #FCFEFE;
+	--grey: #A0A1A2;
+	--dark: #454B60;
 	--white: #ffffff;
 }
 
-.FullHeight {
-	height: 100%;
-	overflow-y: auto;
+html {
+	scroll-behavior: smooth;
+}
+
+.ProtectedRouterView {
+	padding-top: var(--header-h);
 }
