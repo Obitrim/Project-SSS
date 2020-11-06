@@ -3,6 +3,7 @@
 	left: -100%;
 	top: 0;
 	bottom: 0;
+	z-index: 999;
 
 	width: var(--sidebar-width);
 	overflow-y: auto;
@@ -22,7 +23,7 @@
 	font-size: calc(var(--font-size) - 2px);
 	color: var(--danger);
 	font-weight: 500;
-	line-height: 260%;
+	line-height: 280%;
 }
 
 .ActiveLink {
