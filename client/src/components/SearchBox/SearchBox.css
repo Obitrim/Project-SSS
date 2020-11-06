@@ -1,10 +1,29 @@
 .SearchBox {
-	border: none;
-	padding: 0.5rem 1rem;
-	border-radius: 5rem;
-	background-color: var(--bg-light);
+	position: relative;
 }
 
-.SearchBox:focus {
+.SearchBox__Input {
+	border: none;
+	padding: 0.5rem 1rem;
+	padding-left: 2.5rem;
+	border-radius: 5rem;
+	background-color: var(--bg-light);
+	width: 100%;
+}
+
+.SearchBox__Input:focus {
 	background-color: var(--white);
+}
+
+.SearchBox__Input:focus + .SearchBox__Icon {
+	color: var(--danger);
+}
+
+.SearchBox__Icon {
+	position: absolute;
+	left: 0.5rem;
+	top: 50%;
+	
+	transform: translateY(-50%);
+	color: var(--dark);
 }
