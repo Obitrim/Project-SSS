@@ -1,0 +1,9 @@
+.News {
+	padding: var(--section-v-whitespace) 0;
+}
+
+.News .Container {
+	display: grid;
+	grid-gap: 1.4rem;
+	grid-template-columns: repeat(audit-fit, minmax(230px, afr));
+}

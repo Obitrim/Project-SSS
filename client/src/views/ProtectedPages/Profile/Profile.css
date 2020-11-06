@@ -1,0 +1,84 @@
+.ProfileView {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: var(--section-v-whitespace) 1rem;
+	text-align: center;
+}
+
+.ProfileView__Name {
+	margin: 2rem 0;
+}
+
+.ProfileView__Form {
+	text-align: left;
+	padding: 2rem;
+	box-shadow: var(--light-shadow);
+	border-radius: var(--b-radius);
+}
+
+.ProfileView__Form .FormGroup {
+	margin: 0;
+	position: relative;
+}
+
+.ProfileView__Form .EditBtn {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	background-color: transparent;
+	border: none;
+	padding: 0.5rem;
+}
+
+.ProfileView__Form .EditBtn:hover {
+	cursor: pointer;
+	background-color: var(--bg-light);
+}
+
+.ProfileView__Form__Input:first-child {
+	margin-top: 0;
+}
+
+.ProfileView__Form__Input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--grey);
+	padding: 0.5rem 0;
+	margin-top: 0.5rem !important;
+
+	color: var(--dark);
+}
+
+.ProfileView__Form__Input:focus {
+	border-color: var(--danger);
+}
+
+.ProfileView__Form__Input[readonly]:hover {
+	cursor: not-allowed;
+}
+
+.ProfileView__Form__Input[readonly]:focus {
+	border-color: var(--grey);
+}
+
+.ProfileView__SubmitBtn {
+	display: block;
+	width: 50%;
+
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	padding: 0.5rem 0;
+	border-radius: 5rem;
+	border: 1px solid var(--danger);
+
+	background-color: var(--danger);
+	color: var(--white);
+	transition: var(--transtion-speed);
+}
+
+.ProfileView__SubmitBtn:hover {
+	color: var(--danger);
+	background-color: var(--white);
+}

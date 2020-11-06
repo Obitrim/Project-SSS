@@ -1,0 +1,48 @@
+.ProfileBox {
+	position: relative;
+}
+
+.ProfileItems {
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	right: 0;
+	z-index: 9999;
+
+	background-color: var(--white);
+	min-width: 200px;
+	box-shadow: var(--light-shadow);
+	transform: scale(0) translateY(0.5rem);
+	transform-origin: 100% 0;
+	transition: transform var(--transition-speed);
+}
+
+.ProfileItems--Show {
+	transform: scale(1) translateY(0);
+}
+
+.ViewProfileBtn,
+.LogoutBtn {
+	display: block;
+	width: 100%;
+	padding: 0.7rem 1rem;
+
+	color: var(--danger);
+	font-size: var(--font-size);
+	text-transform: capitalize;
+}
+
+.ViewProfileBtn:hover,
+.LogoutBtn:hover {
+	cursor: pointer;
+	background-color: var(--bg-light);
+}
+
+.ViewProfileBtn {
+	text-decoration: none;
+}
+
+.LogoutBtn {
+	border: none;
+	background-color: transparent;
+	text-align: left;
+}
