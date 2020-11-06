@@ -1,9 +1,13 @@
 import React from 'react';
 import './SearchBox.css';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Index = (props) => {
   return (
-    <input className="SearchBox" type="text" placeholder="Search website" />
+  	<div className="SearchBox">
+    	<input className="SearchBox__Input" type="text" placeholder="Search website" />
+  		<SearchIcon className="SearchBox__Icon"/>
+  	</div>
   )
 }
 
