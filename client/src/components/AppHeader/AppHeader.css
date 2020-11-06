@@ -5,6 +5,8 @@
 	top: 0;
 	left: 0;
 	right: 0;
+
+	z-index: 99;
 }
 
 .AppHeader__Top,
@@ -61,6 +63,20 @@
 .AppHeader__Bottom .SearchBox {
 	margin: 0.3rem 0;
 	margin-left: 1.4rem;
+}
+
+.IconBtn {
+	background-color: transparent;
+	border: none;
+}
+
+.IconBtn:hover {
+	cursor: pointer;
+}
+
+.MenuIcon,
+.BackArrowIcon {
+	color: var(--white);
 }
 
 @media (min-width: 768px){
