@@ -1,0 +1,18 @@
+.FinancialAssistance__NewsFeed {
+	display: none;
+}
+
+.FinancialAssistance__NewsFeed .NewsCard {
+	margin: 1rem 0;
+}
+
+@media (min-width: 768px){
+	.FinancialAssistance__Wrapper {
+		display: flex;
+	}
+
+	.FinancialAssistance__NewsFeed {
+		display: block;
+		margin-top: 0;
+	}
+}

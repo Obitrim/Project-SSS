@@ -11,7 +11,7 @@ const Index = (props) => {
 			
 			<div className="QuickAccess">
 				<Container>
-					<h2 className="QuickAccess__Heading">Quick Access</h2>
+					<h1 className="ViewHeading">Quick Access</h1>
 					<div className="QuickAccess_NavLinks">
 						<Link to="/app/navigation" className="QuickAccess__NavLink">
 							<img className="QuickAccess__Icon" 

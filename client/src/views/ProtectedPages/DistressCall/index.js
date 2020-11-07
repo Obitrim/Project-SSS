@@ -33,7 +33,7 @@ const Index = (props) => {
 	}
 
 	return (
-		<div className="DistressCall">
+		<div className="DistressCall V-whitespace">
 			<Container>
 				<div className="DistressCall__ImgBox">
 					<img className="DistressCall__ImgBox__Img" src="/svgs/SOS.svg" alt="SOS" />

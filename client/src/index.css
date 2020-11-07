@@ -33,3 +33,13 @@ html {
 .ProtectedRouterView {
 	padding-top: var(--header-h);
 }
+
+.ViewHeading {
+	color: var(--dark);
+	font-weight: 500;
+	font-size: calc(var(--font-size) * 1.6);
+}
+
+.V-whitespace {
+	padding: var(--section-v-whitespace) 0;
+}

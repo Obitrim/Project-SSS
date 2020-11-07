@@ -2,12 +2,6 @@
 	padding: var(--section-v-whitespace) 0;
 }
 
-.QuickAccess__Heading {
-	color: var(--dark);
-	font-weight: 400;
-	font-size: calc(var(--font-size) * 1.4);
-}
-
 .QuickAccess_NavLinks {
 	display: grid;
 	grid-gap: 2rem;

@@ -1,0 +1,53 @@
+.NewsCard {
+	overflow: hidden;
+}
+
+.NewsCard--Shadow {
+	box-shadow: var(--light-shadow);
+	border-radius: var(--b-radius);
+}
+
+.NewsCard__Img {
+	width: 100%;
+	height: 130px;
+	object-fit: cover;
+}
+
+.NewsCard--Horizontal {
+	display: flex;
+}
+
+.NewsCard--Horizontal .NewsCard__Img {
+	height: 100%;
+	width: auto;
+	height: 50px;
+}
+
+.NewsCard__Content {
+	padding: 0.5rem 1rem;
+}
+
+.NewsCard__Heading {
+	font-size: calc(var(--font-size) - 1px);
+	line-height: 160%;
+}
+
+.NewsCard__ActionBtns {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.ActionBtn {
+	border: none;
+	background-color: transparent;
+	color: var(--grey);
+}
+
+.ActionBtn:hover {
+	color: var(--danger);
+	cursor: pointer;
+}
+
+.ActionBtn + .ActionBtn {
+	margin-left: 0.5rem;
+}
