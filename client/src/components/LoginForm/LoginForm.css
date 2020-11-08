@@ -37,6 +37,7 @@
 	border-radius: 5rem;
 	border: 1px solid var(--grey);
 	width: 100%;
+	outline: none;
 }
 
 .LoginForm .FormGroup__Input:focus {
