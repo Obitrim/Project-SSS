@@ -28,10 +28,10 @@ const Index = (props) => {
         </div>
         <div className="HostelCard__buttons">
           <div>
-            <button>Preview</button>
+            <button className="HostelCard__Button">Preview</button>
           </div>
           <div>
-            <button>Room Types</button>
+            <button className="HostelCard__Button">Room Types</button>
           </div>
         </div>
       </div>
