@@ -9,7 +9,7 @@
 
 .NewsCard__Img {
 	width: 100%;
-	height: 130px;
+	height: 170px;
 	object-fit: cover;
 }
 
@@ -35,6 +35,7 @@
 .NewsCard__ActionBtns {
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 1rem;
 }
 
 .ActionBtn {
