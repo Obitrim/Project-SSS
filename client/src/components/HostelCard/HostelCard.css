@@ -42,6 +42,7 @@
 .HostelCard__info__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .HostelCard__info__ratings {
