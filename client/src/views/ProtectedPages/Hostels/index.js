@@ -5,10 +5,10 @@ import HostelCard from "../../../components/HostelCard";
 
 const Index = (props) => {
   return (
-    <div className="HostelFinder">
+    <div className="HostelFinder V-whitespace">
       <Container>
+        <h1 className="ViewHeading">Hostels</h1>
         <div className="HostelFinder__Main">
-          <div className="HostelFinder__row">
             <HostelCard
               img={"/images/hostel_img.jpg"}
               hostel_name={"Hostel Name"}
@@ -17,7 +17,14 @@ const Index = (props) => {
               }
               hostel_rating={5}
             />
-
+            <HostelCard
+              img={"/images/hostel_img.jpg"}
+              hostel_name={"Hostel Name"}
+              hostel_desc={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
+              }
+              hostel_rating={4}
+            />
             <HostelCard
               img={"/images/hostel_img.jpg"}
               hostel_name={"Hostel Name"}
@@ -26,9 +33,14 @@ const Index = (props) => {
               }
               hostel_rating={5}
             />
-          </div>
-
-          <div className="HostelFinder__row">
+            <HostelCard
+              img={"/images/hostel_img.jpg"}
+              hostel_name={"Hostel Name"}
+              hostel_desc={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
+              }
+              hostel_rating={2}
+            />
             <HostelCard
               img={"/images/hostel_img.jpg"}
               hostel_name={"Hostel Name"}
@@ -37,7 +49,6 @@ const Index = (props) => {
               }
               hostel_rating={5}
             />
-
             <HostelCard
               img={"/images/hostel_img.jpg"}
               hostel_name={"Hostel Name"}
@@ -46,7 +57,22 @@ const Index = (props) => {
               }
               hostel_rating={5}
             />
-          </div>
+            <HostelCard
+              img={"/images/hostel_img.jpg"}
+              hostel_name={"Hostel Name"}
+              hostel_desc={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
+              }
+              hostel_rating={3}
+            />
+            <HostelCard
+              img={"/images/hostel_img.jpg"}
+              hostel_name={"Hostel Name"}
+              hostel_desc={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
+              }
+              hostel_rating={5}
+            />
         </div>
       </Container>
     </div>
