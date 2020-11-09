@@ -41,9 +41,9 @@
 	margin-left: auto;
 }
 
-.FinancialAssistance__NewsFeed {
+/*.FinancialAssistance__NewsFeed {
 	display: none;
-}
+}*/
 
 .FinancialAssistance__NewsFeed .NewsCard {
 	margin: 1rem 0;
@@ -60,9 +60,9 @@
 		flex: 1 !important;
 	}
 
-
+/*
 	.FinancialAssistance__NewsFeed {
 		display: block;
 		margin-top: 0;
-	}
+	}*/
 }

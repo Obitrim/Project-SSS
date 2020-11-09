@@ -136,10 +136,6 @@ const Index = (props) => {
                     )}
                 </Formik>
     			{/*News*/}
-    			<aside className="FinancialAssistance__NewsFeed">
-    				<h3>News Feed</h3>
-    				<NewsCard shadow={false} layout="H"/>
-    			</aside>
     		</div>
     	</Container>
     </section>
