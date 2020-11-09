@@ -1,13 +1,17 @@
-import React from "react";
 import './HostelCard.css';
+import React, { useContext } from "react";
+import { StoreContext } from '../../store';
+import { useHistory } from 'react-router-dom';
 import StarRateIcon from '@material-ui/icons/StarRate';
 
-
 const Index = (props) => {
-    const hostelRating = [];
-    for (let i=0; i<props.hostel_rating; i++){
-        hostelRating.push(<StarRateIcon />)
-    }
+  const history = useHistory();
+  const { dispatch } = useContext(StoreContext);
+
+  const hostelRating = [];
+  for (let i=0; i<props.hostel_rating; i++){
+      hostelRating.push(<StarRateIcon />)
+  }
     
   return (
     <div className="HostelCard">
@@ -28,7 +32,10 @@ const Index = (props) => {
         </div>
         <div className="HostelCard__buttons">
           <div>
-            <button className="HostelCard__Button">Preview</button>
+            <button className="HostelCard__Button" 
+              onClick={() => history.push(`/app/hostels/${props.id}`)}
+              > Preview
+            </button>
           </div>
           <div>
             <button className="HostelCard__Button">Room Types</button>
