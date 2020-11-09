@@ -1,76 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StoreContext } from "../../../../store";
 import HostelCard from "../../../../components/HostelCard";
 
-
 const Index = () => {
+  const { store } = useContext(StoreContext);
+
   return (
     <>
       <h1 className="ViewHeading">Hostels</h1>
       <div className="HostelFinder__Main">
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={5}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={4}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={5}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={2}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={5}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={5}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={3}
-        />
-        <HostelCard
-          img={"/images/hostel_img.jpg"}
-          hostel_name={"Hostel Name"}
-          hostel_desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem totam ipsam vitae veniam, nesciunt voluptate voluptatum."
-          }
-          hostel_rating={5}
-        />
+        {store.hostels.map(hostel => (
+           <HostelCard
+            key={hostel.id}
+            id={hostel.id}
+            img={hostel.img}
+            hostel_name={hostel.name}
+            hostel_desc={hostel.desc}
+            hostel_rating={hostel.rating}
+          />
+          ))}
       </div>
     </>
   );
