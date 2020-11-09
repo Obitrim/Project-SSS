@@ -1,12 +1,10 @@
 import './HostelCard.css';
-import React, { useContext } from "react";
-import { StoreContext } from '../../store';
+import React from "react";
 import { useHistory } from 'react-router-dom';
 import StarRateIcon from '@material-ui/icons/StarRate';
 
 const Index = (props) => {
   const history = useHistory();
-  const { dispatch } = useContext(StoreContext);
 
   const hostelRating = [];
   for (let i=0; i<props.hostel_rating; i++){
