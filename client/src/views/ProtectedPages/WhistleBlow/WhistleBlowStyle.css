@@ -10,7 +10,7 @@
 }
 
 .WhistleBlow__Info {
-    margin-top: 0.6rem;
+    margin: 0.6rem 0;
     padding: 1rem;
     border-radius: var(--b-radius);
     background-color: var(--primary-light);
@@ -21,18 +21,19 @@
     color: var(--primary);
 }
 
-.InfoIcon {
+.WhistleBlow .InfoIcon {
     margin-right: 0.5rem;
 }
 
-.text-input {
+.WhistleBlow .text-input {
     border-radius: var(--b-radius);
     border: 1px solid var(--grey);
-    padding: 15px;
+    padding: 1rem;
+    width: 100%;
     font-size: 1.1rem;
 }
 
-.text-input:focus {
+.WhistleBlow .text-input:focus {
     border-color: var(--danger);
 }
 
@@ -40,18 +41,18 @@
     font-size: calc(var(--font-size) + 2px);
     color: var(--dark);
     font-weight: 400;
+    margin: 1.6rem 0 0.8rem;
 }   
 
 .descrip-body {
     margin-top: 1.4rem;
 }
 
-.send-bttn{
-    float: right;
-    margin-top: 20px;
-}
 
-.send-bttn input[type="button"]{
+.WhistleBlow .SendBtn{
+    display: block;
+    margin-left: auto;
+    margin-top: 1.4rem;
     font-size: 1.3rem;
     padding: 8px 35px;
     background-color: var(--danger);
@@ -62,7 +63,7 @@
     transition: var(--transition-speed);
 }
 
-.send-bttn input[type="button"]:hover {
+.WhistleBlow .SendBtn:hover {
     cursor: pointer;
     background-color: transparent;
     color: var(--danger);
