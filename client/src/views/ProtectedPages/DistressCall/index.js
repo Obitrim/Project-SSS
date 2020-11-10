@@ -49,12 +49,13 @@ const Index = (props) => {
 						onChange={onChangeHandler}
 						placeholder="Send us a message"
 						value={ distressMessage }></textarea>
-					{isRecording && <p className="RecordingMsg">Recording... Click the record button to cancel</p>}
+					{isRecording && <p className="RecordingMsg">Click the record button to cancel</p>}
 					<div className="ButtonBar">
 						<button type="button"
-							className={`DistressCall__ButtonBar__Btn ${isRecording && 'Recording'}`}  
+							className={`DistressCall__ButtonBar__Btn RecordingBtn ${isRecording && 'Recording'}`}  
 							onClick={ startRecording }>
 							<SettingsVoiceIcon className="DistressCall__SettingsVoiceIcon"/>
+							{isRecording && 'Recording...'}
 						</button>
 						<button 
 							type="button"

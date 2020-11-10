@@ -54,6 +54,11 @@
 	transition: var(--transition-speed);
 }
 
+.RecordingBtn {
+	display: flex;
+	align-items: center;
+}
+
 .DistressCall__ButtonBar__Btn:hover,
 .Recording,
 .SendBtn {

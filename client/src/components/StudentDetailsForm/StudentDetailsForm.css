@@ -16,7 +16,7 @@
 
 .StudentDetails__Form .Legend {
 	font-weight: 700;
-	color: red;
+	color: var(--dark);
 }
 
 .StudentDetails__Form .Legend--Desc {

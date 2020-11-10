@@ -37,7 +37,7 @@ html {
 }
 
 .ViewHeading {
-	color: var(--dark);
+	color: var(--danger);
 	font-weight: 500;
 	font-size: calc(var(--font-size) * 1.6);
 }
