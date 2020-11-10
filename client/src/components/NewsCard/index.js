@@ -18,7 +18,7 @@ const Index = ({shadow, layout}) => {
         `}>
     	<img className="NewsCard__Img" src="/images/banner-bg.jpg" alt="news image" />
     	<div className="NewsCard__Content">
-       <p className="NewsCard__Heading">Lorem, porro asperiores blanditiis, magnam quidem, nobis</p>
+       <p className="NewsCard__Heading">Lorem, porro asperiores blanditiis, magnam quidem, nobis porro asperiores blanditiis, magnam quidem, nobis</p>
         <div className="NewsCard__ActionBtns">
           <button className="ActionBtn" type="button">
             <FavoriteIcon/>
