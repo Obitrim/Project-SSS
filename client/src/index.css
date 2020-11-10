@@ -43,3 +43,7 @@ html {
 .V-whitespace {
 	padding: var(--section-v-whitespace) 0;
 }
+
+.swal-text {
+	text-align: center;
+}
