@@ -1,3 +1,10 @@
+.FinancialAssistance {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
 .FinancialAssistance__Form {
 	margin-top: 1rem;
 }
@@ -12,12 +19,20 @@
 	color: red;
 }
 
+.FinancialAssistance__Form .Legend--Desc {
+	margin-top: 1rem;
+}
+
 .FinancialAssistance__Form .Label {
 	color: var(--dark);
 }
 
-.FinancialAssistance__Form .Legend--Desc {
-	margin-top: 1rem;
+.FinancialAssistance .ErrorLabel {
+	color: var(--danger);
+}
+
+.FinancialAssistance .FormGroup {
+	margin-top: 1.3rem;
 }
 
 .FinancialAssistance__Form .FormInput {
@@ -35,34 +50,16 @@
 
 .FinancialAssistance__Form .SendBtn {
 	display: block;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 2rem;
 	border: 1px solid var(--danger);
 	border-radius: 5rem;
 	margin-left: auto;
+	margin-top: 1.4rem;
 }
 
-/*.FinancialAssistance__NewsFeed {
-	display: none;
-}*/
-
-.FinancialAssistance__NewsFeed .NewsCard {
-	margin: 1rem 0;
-}
-
-
-@media (min-width: 768px){
-	.FinancialAssistance__Wrapper {
-		display: flex;
-	}
-
-	.FinancialAssistance__Form {
-		-ms-flex: 1 !important;
-		flex: 1 !important;
-	}
-
-/*
-	.FinancialAssistance__NewsFeed {
-		display: block;
-		margin-top: 0;
-	}*/
+.FinancialAssistance__Form .SendBtn:disabled {
+	background-color: var(--bg-light);
+	color: var(--dark);
+	border-color: var(--bg-light);
+	cursor: none;
 }
