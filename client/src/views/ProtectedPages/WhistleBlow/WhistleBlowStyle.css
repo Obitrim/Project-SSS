@@ -1,37 +1,49 @@
-body{
-       max-height: 100vh;
-    /* margin: auto; */
-    /* text-align: center; */
+.WhistleBlow {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.WhistleBlow .ViewHeading {
+    color: var(--danger);
+}
+
+.WhistleBlow__Info {
+    margin-top: 0.6rem;
+    padding: 1rem;
+    border-radius: var(--b-radius);
+    background-color: var(--primary-light);
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    line-height: 120%;
+    color: var(--primary);
 }
 
-/* xs */
-@media(max-width:575px){
-.descrip-body{
-    margin-top: 110px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
+.InfoIcon {
+    margin-right: 0.5rem;
 }
 
-.text-input{
-    border-radius: 20px;
-    border: 2px solid gray;
+.text-input {
+    border-radius: var(--b-radius);
+    border: 1px solid var(--grey);
     padding: 15px;
     font-size: 1.1rem;
-    outline: none;
 }
 
-
-.descrip-head{
-    font-size: 1.2em;
-    color: rgb(87, 85, 85);
-    font-weight: bold;
+.text-input:focus {
+    border-color: var(--danger);
 }
-.input-section{
-    margin-top: 10px;
+
+.descrip-head {
+    font-size: calc(var(--font-size) + 2px);
+    color: var(--dark);
+    font-weight: 400;
+}   
+
+.descrip-body {
+    margin-top: 1.4rem;
 }
 
 .send-bttn{
@@ -42,183 +54,16 @@ body{
 .send-bttn input[type="button"]{
     font-size: 1.3rem;
     padding: 8px 35px;
-    background-color:rgb(216, 17, 17);
+    background-color: var(--danger);
     color: white;
-    outline: none;
-    border-radius: 20px;
-    border: none;
-}
-}
-
-/* sm */
-@media(min-width:576px)and (max-width:767px){
-.descrip-body{
-    margin-top: 110px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
+    
+    border-radius: 5rem;
+    border: 1px solid var(--danger);
+    transition: var(--transition-speed);
 }
 
-.text-input{
-    border-radius: 20px;
-    border: 2px solid gray;
-    padding: 15px;
-    font-size: 1.1rem;
-    outline: none;
+.send-bttn input[type="button"]:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--danger);
 }
-
-
-.descrip-head{
-    font-size: 1.2em;
-    color: rgb(87, 85, 85);
-    font-weight: bold;
-}
-.input-section{
-    margin-top: 10px;
-}
-
-.send-bttn{
-    float: right;
-    margin-top: 20px;
-}
-
-.send-bttn input[type="button"]{
-    font-size: 1.3rem;
-    padding: 8px 35px;
-    background-color:rgb(216, 17, 17);
-    color: white;
-    outline: none;
-    border-radius: 20px;
-    border: none;
-}
-}
-
-/* md */
-@media(min-width:768px)and (max-width:991px){
-.descrip-body{
-    margin-top: 110px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
-}
-
-.text-input{
-    border-radius: 20px;
-    border: 2px solid gray;
-    padding: 15px;
-    font-size: 1.1rem;
-    outline: none;
-}
-
-
-.descrip-head{
-    font-size: 1.4em;
-    color: rgb(87, 85, 85);
-    font-weight: bold;
-}
-.input-section{
-    margin-top: 10px;
-}
-
-.send-bttn{
-    float: right;
-    margin-top: 20px;
-}
-
-.send-bttn input[type="button"]{
-    font-size: 1.2em;
-    padding: 10px 40px;
-    background-color:rgb(216, 17, 17);
-    color: white;
-    outline: none;
-    border-radius: 20px;
-    border: none;
-}
-}
-
-/* lg */
-@media(min-width:992px)and (max-width:1199px){
-.descrip-body{
-    margin-top: 110px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
-}
-
-.text-input{
-    border-radius: 20px;
-    border: 2px solid gray;
-    padding: 15px;
-    font-size: 1.1rem;
-    outline: none;
-}
-
-
-.descrip-head{
-    font-size: 1.4em;
-    color: rgb(87, 85, 85);
-    font-weight: bold;
-}
-.input-section{
-    margin-top: 10px;
-}
-
-.send-bttn{
-    float: right;
-    margin-top: 20px;
-}
-
-.send-bttn input[type="button"]{
-    font-size: 1.2em;
-    padding: 10px 40px;
-    background-color:rgb(216, 17, 17);
-    color: white;
-    outline: none;
-    border-radius: 20px;
-    border: none;
-}
-}
-
-/* xl */
-@media(min-width:1200px){
-.descrip-body{
-    margin-top: 110px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
-}
-
-.text-input{
-    border-radius: 20px;
-    border: 2px solid gray;
-    padding: 15px;
-    font-size: 1.1rem;
-    outline: none;
-}
-
-
-.descrip-head{
-    font-size: 1.4em;
-    color: rgb(87, 85, 85);
-    font-weight: bold;
-}
-.input-section{
-    margin-top: 10px;
-}
-
-.send-bttn{
-    float: right;
-    margin-top: 20px;
-}
-
-.send-bttn input[type="button"]{
-    font-size: 1.2em;
-    padding: 10px 40px;
-    background-color:rgb(216, 17, 17);
-    color: white;
-    outline: none;
-    border-radius: 20px;
-    border: none;
-}
-}
-
