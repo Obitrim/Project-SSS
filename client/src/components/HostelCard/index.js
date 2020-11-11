@@ -11,25 +11,6 @@ const Index = (props) => {
     hostelRating.push(<StarRateIcon />);
   }
 
-  const buttons = () => {
-    return (
-      <>
-        <div>
-          <button
-            className="HostelCard__Button"
-            onClick={() => history.push(`/app/hostels/${props.id}`)}
-          >
-            {" "}
-            Preview
-          </button>
-        </div>
-        <div>
-          <button className="HostelCard__Button">Room Types</button>
-        </div>
-      </>
-    );
-  };
-
   return (
     <div className="HostelCard">
       <div className="HostelCard__img">
@@ -47,9 +28,6 @@ const Index = (props) => {
         <div className="HostelCard__info__desc">
           <p>{props.hostel_desc}</p>
         </div>
-        {/* <div className="HostelCard__buttons">
-          {props.room_type ? null : buttons()}
-        </div> */}
         <div className="HostelCard__buttons">
         <div>
           <button
