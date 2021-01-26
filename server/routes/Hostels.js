@@ -4,7 +4,7 @@ const router = express.Router();
 let Hostels = require("../models/Hostels");
 
 router.get('/', (req, res)=>{
-    Roout.find({}, (err, bookind_data)=>{
+    Hostels.find({}, (err, bookind_data)=>{
         if(err){
             console.log("err");
 
@@ -14,6 +14,16 @@ router.get('/', (req, res)=>{
     })
 });
 
+router.get('/detail', (req, res)=>{
+    Hostels.find({}, (err, bookind_data)=>{
+        if(err){
+            console.log("err");
+
+        }else{
+            res.json(bookind_data);
+        }
+    })
+});
 
 router.post('/add-hostel', (req, res)=>{
     
