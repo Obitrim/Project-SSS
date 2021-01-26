@@ -5,7 +5,7 @@ let finAsistance = require("../models/FinancialAs");
 let SOS = require("../models/sos");
 let NEWS = require("../models/news");
 let Counselling = require("../models/counselling");
-let Whistle_blow = require("../models/");
+let Whistle_blow = require("../models/whistle-blow");
 
 //this for getting data from the backend for financial assistance
 
