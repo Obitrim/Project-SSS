@@ -1,6 +1,6 @@
 const Schema = mongoose.Schema;
 
-let FinalAsistance= new Schema({
+let Counselling= new Schema({
     firstName: {
         type: String
     },
@@ -26,4 +26,4 @@ let FinalAsistance= new Schema({
         type: String
     },
 });
-module.exports = mongoose.model("FinalAsistance", FinalAsistance);
+module.exports = mongoose.model("counselling", Counselling);
