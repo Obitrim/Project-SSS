@@ -68,14 +68,14 @@
   border-radius: 20px;
   width: 7rem;
   border-width: 1px;
-  border-color: var(--danger-light);
+  border-color: var(--danger);
   outline: none;
-  color: var(--danger-light);
-  background-color: var(--white);
+  background-color: var(--danger);
+  color: var(--white);
 }
 
 .HostelCard__Button:hover {
-  background-color: var(--danger-light);
+  background-color: var(--white);
+  color: var(--danger);
   transition: var(--transition-speed);
-  color: var(--white);
 }
