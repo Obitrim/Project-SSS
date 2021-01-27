@@ -11,13 +11,13 @@ const Index = () => {
       <div className="HostelFinder__Main">
         {store.hostels.map(hostel => (
            <HostelCard
-            key={hostel.id}
-            id={hostel.id}
-            img={hostel.img}
-            hostel_name={hostel.name}
-            hostel_desc={hostel.desc}
-            hostel_rating={hostel.rating}
-          />
+              key={hostel.id}
+              id={hostel.id}
+              img={hostel.img}
+              hostel_name={hostel.name}
+              hostel_desc={hostel.desc}
+              hostel_rating={hostel.hostel_rating}
+            />
           ))}
       </div>
     </>
