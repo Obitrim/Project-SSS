@@ -1,6 +1,7 @@
 import './LoginForm.css';
 import React from 'react';
 import * as yup from 'yup';
+import swal from 'sweetalert';
 import { Link, useHistory } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
@@ -32,7 +33,13 @@ const Index = (props) => {
 				// login request
 				// success alert
 				// route
-				history.push("/app");
+				swal({
+					title: 'Login Success!!',
+					text: 'You have successfully logged in',
+					icon: 'success'
+				}).then(() => {
+					history.push("/app");
+				})
 			}}
 			>
 			{formik => (
