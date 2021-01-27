@@ -4,16 +4,26 @@ const router = express.Router();
 let Hostels = require("../models/Hostels");
 
 router.get('/', (req, res)=>{
-    Roout.find({}, (err, bookind_data)=>{
+    Hostels.find({}, (err, hostel_data)=>{
         if(err){
             console.log("err");
 
         }else{
-            res.json(bookind_data);
+            res.json(hostel_data);
         }
     })
 });
 
+router.get('/detail', (req, res)=>{
+    Hostels.find({}, (err, hostel_data)=>{
+        if(err){
+            console.log("err");
+
+        }else{
+            res.json(hostel_data);
+        }
+    })
+});
 
 router.post('/add-hostel', (req, res)=>{
     
@@ -23,7 +33,7 @@ router.post('/add-hostel', (req, res)=>{
         res.status(200).json({'HostelData': 'Hostel Data  added successfully'})
     })
     .catch(err=>{
-        res.status(400).send('Hostel adding was unseccesful');
+        res.status(400).send('Adding Hostel data was unseccesful');
     });
 });
 
