@@ -1,8 +1,12 @@
 import React from 'react';
+import Googlemap from '../../../components/GoogleMap';
 
 const Index = (props) => {
   return (
-    <h1>Campus Navigation</h1>
+    <div className="CampusNavigator">
+    	<h1>Campus Navigation</h1>
+    	<Googlemap/>
+    </div>
   )
 }
 

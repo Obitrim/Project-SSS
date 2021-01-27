@@ -8,7 +8,7 @@ const Index = (props) => {
 	useEffect(() => {
 		const sliderInterval = setInterval(() => {
 			setActiveIndex(activeIndex < 3 ? activeIndex + 1 : 0);
-		}, 2000);
+		}, 3000);
 
 		return () => {
 			clearInterval(sliderInterval);

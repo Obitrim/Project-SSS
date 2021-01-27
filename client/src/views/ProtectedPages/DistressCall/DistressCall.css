@@ -16,7 +16,6 @@
 .DistressCall__DetailsBox__Info {
 	color: var(--danger);
 	line-height: 160%;
-	text-align: center;
 }
 
 .MsgBox {
