@@ -3,48 +3,53 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import StarRateIcon from "@material-ui/icons/StarRate";
 
-const Index = (props) => {
-  const history = useHistory();
+const Index = ({ 
+    hostel_rating, img, hostel_name, room_type, price, hostel_desc, id, previewBtn 
+  }) => {
 
+  const history = useHistory();
   const hostelRating = [];
-  for (let i = 0; i < props.hostel_rating; i++) {
-    hostelRating.push(<StarRateIcon />);
+
+  for (let i = 0; i < hostel_rating; i++) {
+    hostelRating.push(<StarRateIcon key={i}/>);
   }
 
   return (
     <div className="HostelCard">
       <div className="HostelCard__img">
-        <img src={props.img} alt="" />
+        <img src={img} alt="" />
       </div>
       <div className="HostelCard__info">
         <div className="HostelCard__info__header">
           <h4 className="HostelCard__info__title">
-            {props.hostel_name ? props.hostel_name : props.room_type}
+            {hostel_name ? hostel_name : room_type}
           </h4>
           <div className="HostelCard__info__ratings">
-            {props.hostel_rating ? hostelRating : props.price}
+            {hostel_rating ? hostelRating : price}
           </div>
         </div>
         <div className="HostelCard__info__desc">
-          <p>{props.hostel_desc}</p>
+          <p>{hostel_desc}</p>
         </div>
         <div className="HostelCard__buttons">
         <div>
-          <button
-            className="HostelCard__Button"
-            onClick={() => history.push(`/app/hostels/${props.id}`)}
-          >
-            {" "}
-            Preview
-          </button>
-        </div>
-        <div>
-          <button className="HostelCard__Button">Room Types</button>
+          {previewBtn && (
+            <button
+              className="HostelCard__Button"
+              onClick={() => history.push(`/app/hostels/${id}`)}
+              >
+              Preview
+            </button>
+            )}
         </div>
         </div>
       </div>
     </div>
   );
 };
+
+Index.defaultProps = {
+  previewBtn: true
+}
 
 export default Index;
