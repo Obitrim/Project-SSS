@@ -1,6 +1,11 @@
 .QuickAccess {
 	padding: var(--section-v-whitespace) 0;
 	background-color: var(--bg-light);
+	margin-top: -0.4em;
+}
+
+.QuickAccess__Paper {
+	padding: 2em !important;
 }
 
 .QuickAccess_NavLinks {
@@ -16,15 +21,14 @@
 	text-decoration: none;
 
 	border-radius: 0.2rem;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.026);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.015);
 	background-color: var(--white);
 	transition: var(--transition-speed);
 }
 
 .QuickAccess__NavLink:hover {
 	background-color: var(--white);
-	text-decoration: underline;
-	box-shadow: var(--light-shadow);
+	background-color: var(--bg-light);
 }
 
 .QuickAccess__Icon {

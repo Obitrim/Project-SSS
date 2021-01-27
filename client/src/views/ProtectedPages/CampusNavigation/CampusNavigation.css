@@ -1,15 +1,10 @@
-div{
-    text-align: center;
-}
 .contents{
         padding: 5rem;
         margin : 500px;
         margin-top: 25px;
         box-shadow: var(--light-shadow);
 }
-fieldset{
-    border: none;
-}
+
 .content_input{
     font-size: 1.0rem;
     padding: 10px;
@@ -21,6 +16,7 @@ fieldset{
     outline: none;
     margin-top: 5px;
 }
+
 @media(min-width:320px){
     .contents{
         padding: 1rem;

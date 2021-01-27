@@ -1,9 +1,18 @@
 .LoginView {
-	padding: var(--section-v-whitespace) 0;
+	background-color: var(--danger);
+}
+
+.LoginView__Row {
 	max-width: var(--container-w);
 	margin: 0 auto;
+}
+
+.LoginView__Layer {
+	padding: var(--section-v-whitespace) 0;
+	
 	padding-left: 1rem;
 	padding-right: 1rem;
+	background-color: var(--white);
 }
 
 .LoginView__Info {
@@ -50,6 +59,10 @@
 @media (min-width: 992px){
 	.LoginView {
 		height: 100vh;
+	}
+
+	.LoginView__Layer {
+		border-radius: 0 0 140% 0;
 	}
 
 	.LoginView__Row {
