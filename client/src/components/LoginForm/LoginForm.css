@@ -1,10 +1,16 @@
 .LoginForm {
+	background-color: var(--white);
 	box-shadow: var(--light-shadow);
-	border-radius: var(--b-radius);
+	border-radius: 0 0 4em 0;
 	padding: 2rem 1.4rem;
 
 	max-width: 450px;
 	margin: 0 auto;
+}
+
+.LoginForm__Fieldset p,
+.LoginForm__Fieldset legend {
+	text-align: center;
 }
 
 .LoginForm__Fieldset {
