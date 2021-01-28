@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
   <g id="hostel_finder_icon" transform="translate(-4020 -1117)">
-    <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(4020 1117)" fill="#d50404"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(4020 1117)" fill="#740c01"/>
     <path id="Path_54" data-name="Path 54" d="M13,8.6a7.6,7.6,0,1,1,15.2,0c0,5.49-6.756,10.136-7.6,16.866C19.758,18.739,13,14.093,13,8.6Z" transform="translate(4019.401 1123.401)" fill="#72caaf"/>
     <path id="Path_55" data-name="Path 55" d="M23,12.209V16.22h2.407V13.011h2.407V16.22H30.22V12.209L26.61,9Z" transform="translate(4013.412 1118.61)" fill="#faefde"/>
     <path id="Path_56" data-name="Path 56" d="M29,19h2.407v3.209H29Z" transform="translate(4009.819 1112.621)" fill="#cda1a7"/>
@@ -12,7 +12,7 @@
     <path id="Path_62" data-name="Path 62" d="M31.4,30a.4.4,0,0,0-.4.4v.8a.4.4,0,1,0,.8,0v-.8A.4.4,0,0,0,31.4,30Z" transform="translate(4008.621 1106.034)" fill="#faefde"/>
     <path id="Path_63" data-name="Path 63" d="M36.4,30a.4.4,0,0,0-.4.4v.8a.4.4,0,1,0,.8,0v-.8A.4.4,0,0,0,36.4,30Z" transform="translate(4005.627 1106.034)" fill="#faefde"/>
     <path id="Path_64" data-name="Path 64" d="M41.4,30a.4.4,0,0,0-.4.4v.8a.4.4,0,1,0,.8,0v-.8A.4.4,0,0,0,41.4,30Z" transform="translate(4002.633 1106.034)" fill="#faefde"/>
-    <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(4020 1117)" fill="#d50404"/>
+    <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(4020 1117)" fill="#740c01"/>
     <path id="Path_54-2" data-name="Path 54" d="M13,8.6a7.6,7.6,0,1,1,15.2,0c0,5.49-6.756,10.136-7.6,16.866C19.758,18.739,13,14.093,13,8.6Z" transform="translate(4019.401 1123.401)" fill="#72caaf"/>
     <path id="Path_55-2" data-name="Path 55" d="M23,12.209V16.22h2.407V13.011h2.407V16.22H30.22V12.209L26.61,9Z" transform="translate(4013.412 1118.61)" fill="#faefde"/>
     <path id="Path_56-2" data-name="Path 56" d="M29,19h2.407v3.209H29Z" transform="translate(4009.819 1112.621)" fill="#cda1a7"/>

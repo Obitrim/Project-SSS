@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="142" height="22" viewBox="0 0 142 22">
   <g id="distress_signal_sent" transform="translate(-103 -624)" opacity="0.4">
-    <rect id="Rectangle_8" data-name="Rectangle 8" width="142" height="22" transform="translate(103 624)" fill="rgba(213,4,4,0.64)"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="142" height="22" transform="translate(103 624)" fill="rgba(116,12,1,0.64)"/>
     <text id="Distress_signal_sent-2" data-name="Distress signal sent" transform="translate(174 640)" fill="#fcfefe" font-size="13" font-family="Arial-ItalicMT, Arial" font-style="italic"><tspan x="-56.354" y="0">Distress signal sent</tspan></text>
   </g>
 </svg>

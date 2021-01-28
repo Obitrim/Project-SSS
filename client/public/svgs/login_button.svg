@@ -1,6 +1,6 @@
 <svg id="login_button" xmlns="http://www.w3.org/2000/svg" width="64" height="31" viewBox="0 0 64 31">
   <g id="Text_box" data-name="Text box">
-    <rect id="Rectangle_1" data-name="Rectangle 1" width="64" height="31" rx="10" fill="#d50404"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="64" height="31" rx="10" fill="#740c01"/>
   </g>
   <text id="Login" transform="translate(18 20)" fill="#fcfefe" font-size="12" font-family="Arial-ItalicMT, Arial" font-style="italic"><tspan x="0" y="0">Login</tspan></text>
 </svg>
