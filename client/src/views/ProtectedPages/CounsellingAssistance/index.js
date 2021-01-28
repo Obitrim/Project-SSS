@@ -1,4 +1,5 @@
 import React from 'react';
+import "./CounsellingAssistance.css";
 import StudentDetailsForm from '../../../components/StudentDetailsForm';
 
 const Index = (props) => {
@@ -7,9 +8,11 @@ const Index = (props) => {
   }
 
   return (
-     <StudentDetailsForm 
-        heading="Counselling Assistance"
-        onSubmit={onSubmit}/>
+    <section className="CounsellingAssistance">
+    	 <StudentDetailsForm 
+	        heading="Counselling Assistance"
+	        onSubmit={onSubmit}/>
+    </section>
   )
 }
 
