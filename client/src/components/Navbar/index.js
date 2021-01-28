@@ -14,6 +14,10 @@ const Index = (props) => {
 	return (
 		<>
 			<nav className={`AppNavbar ${store.sidebarOpen && 'Show'}`}>
+				<div className="NavbarHeader">
+					<strong className="AppName">Knust Student Support System</strong><br/>
+					<img className="NavbarHeaderImg" src="/images/logo.png" alt="logo" />
+				</div>
 				<NavLink className="NavLink" to="/app" exact activeClassName="ActiveLink">Home</NavLink>
 				<NavLink className="NavLink" to="/app/hostels" activeClassName="ActiveLink">Hostels</NavLink>
 				<NavLink className="NavLink" to="/app/finance" activeClassName="ActiveLink">Financial Assistance</NavLink>
