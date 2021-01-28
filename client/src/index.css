@@ -32,6 +32,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: var(--bg-light);
+}
+
+input:focus {
+	outline: none;
+}
+
 .ProtectedRouterView {
 	padding-top: var(--header-h);
 }
