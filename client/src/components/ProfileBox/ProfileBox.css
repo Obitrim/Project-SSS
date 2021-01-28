@@ -6,7 +6,7 @@
 	position: absolute;
 	top: calc(100% + 0.5rem);
 	right: 0;
-	z-index: 9999;
+	z-index: 99999;
 
 	background-color: var(--white);
 	min-width: 200px;

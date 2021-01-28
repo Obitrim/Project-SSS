@@ -32,6 +32,13 @@
 	justify-content: space-between;
 }
 
+.AppHeader__Logo {
+	height: 70%;
+	width: auto;
+	margin-left: 0.5em;
+	display: none;
+}
+
 .AppName {
 	margin-left: 1rem;
 	color: var(--white);
@@ -72,6 +79,7 @@
 
 .IconBtn:hover {
 	cursor: pointer;
+	opacity: 0.6;
 }
 
 .MenuIcon,
@@ -100,5 +108,9 @@
 
 	.AppName {
 		margin-left: 0;
+	}
+
+	.AppHeader__Logo {
+		display: inline-block;
 	}
 }

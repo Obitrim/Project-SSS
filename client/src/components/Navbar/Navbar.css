@@ -42,6 +42,20 @@
 	line-height: 280%;
 }
 
+
+.NavLink:hover {
+	background-color: var(--danger);
+}
+
+.NavbarHeader {
+	text-align: center;
+}
+
+.NavbarHeaderImg {
+	width: 70%;
+	height: auto;
+}
+
 .ActiveLink {
 	border-color: var(--danger);
 	background-color: var(--bg-light);
@@ -58,6 +72,10 @@
 		position: static;
 		background-color: initial;
 		box-shadow: none;
+	}
+
+	.NavbarHeader {
+		display: none;
 	}
 
 	.AppNavbar__Overlay {
