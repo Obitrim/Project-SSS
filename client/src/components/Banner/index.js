@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 const Index = ({children, height, bgSrc}) => {
 
  	return (
- 		<section className="Banner" style={{ height }}>
+ 		<section className="Banner" style={{ minHeight: height }}>
 			<img src={bgSrc} className="Banner__Img" alt="banner img" />
-			{ children }
+			<div className="Banner__Content">{ children }</div>
 		</section>
  	)
 }
@@ -19,7 +19,7 @@ Index.propTypes = {
 }
 
 Index.defaultProps = {
-	height: 'auto'
+	height: '60vh'
 }
 
 export default Index;
