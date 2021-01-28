@@ -2,9 +2,6 @@ import React from 'react';
 import './NewsCard.css';
 import PropTypes from 'prop-types';
 import ShareIcon from '@material-ui/icons/Share';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const Index = ({shadow, layout}) => {
   function isVertical(){
@@ -20,13 +17,6 @@ const Index = ({shadow, layout}) => {
     	<div className="NewsCard__Content">
        <p className="NewsCard__Heading">Lorem, porro asperiores blanditiis, magnam quidem, nobis porro asperiores blanditiis, magnam quidem, nobis</p>
         <div className="NewsCard__ActionBtns">
-          <button className="ActionBtn" type="button">
-            <FavoriteIcon/>
-            <FavoriteBorderIcon/>
-          </button>
-          <button className="ActionBtn" type="button">
-            <ChatBubbleIcon/>
-          </button>
           <button className="ActionBtn" type="button">
             <ShareIcon/>
           </button>
