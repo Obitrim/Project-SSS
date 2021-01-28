@@ -2,11 +2,12 @@ import './StudentDetailsForm.css';
 import React from 'react';
 import * as yup from 'yup';
 import PropTypes from 'prop-types';
+import Paper from '@material-ui/core/Paper';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
 const Index = ({onSubmit, heading}) => {
   return (
-    <section className="StudentDetails V-whitespace">
+    <Paper className="StudentDetails">
 		<h1 className="ViewHeading">{heading}</h1>
         <Formik
             initialValues={{
@@ -125,7 +126,7 @@ const Index = ({onSubmit, heading}) => {
                         </div>
                     </fieldset>
                     <hr size="2"/>
-                    <fieldset>
+                    <fieldset className="StudentDetails__Form__DescBox">
                         <legend className="Legend Legend--Desc">Description</legend>
                         <Field as="textarea" 
                             rows="5"
@@ -139,7 +140,7 @@ const Index = ({onSubmit, heading}) => {
                 </Form>
             )}
         </Formik>
-    </section>
+    </Paper>
   )
 }
 
