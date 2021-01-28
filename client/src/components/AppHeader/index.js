@@ -24,6 +24,7 @@ const Index = (props) => {
         			<button className="IconBtn MenuToggler" type="button" onClick={showSidebar}>
         				<MenuIcon className="MenuIcon"/>
         			</button>
+                    <img className="AppHeader__Logo" src="/images/logo.png" alt="logo"/>
         			<span className="AppName">KNUST SOS</span>
         			<SearchBox/>
         			<ProfileBox/>
