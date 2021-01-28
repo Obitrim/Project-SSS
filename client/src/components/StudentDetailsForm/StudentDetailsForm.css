@@ -1,8 +1,8 @@
 .StudentDetails {
 	max-width: 600px;
-	margin: 0 auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	margin: 2em auto;
+	padding: 1.5em;
+	background-color: var(--white);
 }
 
 .StudentDetails__Form {
@@ -40,12 +40,16 @@
 	width: 100%;
 	padding: 0.5rem 1rem;
 	margin: 0.5rem 0;
-	border-radius: 1rem;
+	border-radius: 0.3em;
 	border: 1px solid var(--grey);
 }
 
 .StudentDetails__Form .FormInput:focus {
 	border-color: var(--danger);
+}
+
+.StudentDetails__Form__DescBox {
+	margin-top: 1.5em;
 }
 
 .StudentDetails__Form .SendBtn {
