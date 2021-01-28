@@ -26,7 +26,7 @@ const Index = (props) => {
 	return (
 		<div className="ProfileBox">
 			<button className="IconBtn ProfileToggler" type="button" onClick={() => showProfileMenu()}>
-				<img src="/icons/Profile.png" alt="profile icon"/>
+				<img src="/svgs/profile.svg" alt="profile icon"/>
 			</button>
 			<div className={`ProfileItems ${profileMenuIsOpen && 'ProfileItems--Show'}`}>
 				<Link className="ViewProfileBtn" to="/app/profile">Profile</Link>
