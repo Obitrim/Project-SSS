@@ -2,7 +2,6 @@ import React from 'react';
 import AppHome from './Home';
 import Hostels from './Hostels';
 import Profile from './Profile';
-import WhistleBlow from './WhistleBlow';
 import DistressCall from './DistressCall';
 import { Route } from 'react-router-dom';
 import CampusNavigation from './CampusNavigation';
@@ -18,10 +17,9 @@ const Index = (props) => {
 			<AppHeader/>
 			<main className="ProtectedRouterView">
 				<Route exact path="/app" component={AppHome}/>
-				<Route path="/app/hostels" exact component={Hostels}/>
 				<Route path="/app/profile" component={Profile}/>
-				<Route path="/app/distress" component={DistressCall}/>
-				<Route path="/app/whistle-blow" component={WhistleBlow}/>
+				<Route path="/app/hostels" exact component={Hostels}/>
+				<Route path="/app/distress-call" component={DistressCall}/>
 				<Route path="/app/news" component={NewsAndAnnouncements}/>
 				<Route path="/app/hostels/:id" component={HostelDetails}/>
 				<Route path="/app/finance" component={FinancialAssistance}/>

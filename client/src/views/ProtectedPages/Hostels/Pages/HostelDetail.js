@@ -26,7 +26,6 @@ const Index = (props) => {
    				<p>Lorem ipsum dolor sit amet lorem25 consectetur, adipisicing, elit. Deserunt reiciendis, necessitatibus temporibus ad optio ullam.</p>
    			</div>
    		</Paper>
-		<h1 className="ViewHeading">Hostel Detail</h1>
 		<div className="HostelDetail">
 			<div className="HostelDetail__top">
 				<div className="HostelDetail__card">

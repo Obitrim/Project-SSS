@@ -9,20 +9,21 @@ const Index = ({shadow, layout}) => {
   }
 
   return (
-    <div className={`NewsCard 
+    <a href="#" className={`NewsCard 
         ${ shadow && 'NewsCard--Shadow' }
         ${ !isVertical() && 'NewsCard--Horizontal'}
         `}>
     	<img className="NewsCard__Img" src="/images/banner-bg.jpg" alt="news image" />
     	<div className="NewsCard__Content">
-       <p className="NewsCard__Heading">Lorem, porro asperiores blanditiis, magnam quidem, nobis porro asperiores blanditiis, magnam quidem, nobis</p>
+        <h3 className="NewsCard__Heading">Lorem ipsum, dolor sit amet consectetur, adipisicing.</h3>
+        <p className="NewsCard__Text">Lorem, porro asperiores blanditiis, magnam quidem, nobis porro asperiores bland</p>
         <div className="NewsCard__ActionBtns">
           <button className="ActionBtn" type="button">
             <ShareIcon/>
           </button>
         </div> 
       </div>
-    </div>
+    </a>
   )
 }
 

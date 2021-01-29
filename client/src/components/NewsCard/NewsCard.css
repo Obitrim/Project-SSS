@@ -1,6 +1,9 @@
 .NewsCard {
 	overflow: hidden;
 	background-color: var(--white);
+	text-decoration: none;
+	color: inherit;
+	font-size: calc(var(--font-size) - 4px);
 }
 
 .NewsCard--Shadow {
@@ -28,9 +31,11 @@
 	padding: 0.5rem 1rem;
 }
 
-.NewsCard__Heading {
-	font-size: calc(var(--font-size) - 1px);
-	line-height: 160%;
+.NewsCard__Text {
+	font-size: calc(var(--font-size) - 2px);
+	line-height: 140%;
+	color: var(--light-grey);
+	margin-top: 0.3em;
 }
 
 .NewsCard__ActionBtns {

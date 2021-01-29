@@ -53,7 +53,7 @@ const Index = (props) => {
 							</Link>
 							<Link to="/app/distress" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/SOS_icon.svg" 
+									src="/svgs/sos_icon.svg" 
 									alt="sos icon" 
 								/>
 								<span className="QuickAccess__Text">SOS</span>

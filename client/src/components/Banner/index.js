@@ -19,7 +19,7 @@ Index.propTypes = {
 }
 
 Index.defaultProps = {
-	height: '60vh'
+	height: 'auto'
 }
 
 export default Index;
