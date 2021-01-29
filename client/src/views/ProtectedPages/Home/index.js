@@ -37,13 +37,6 @@ const Index = (props) => {
 								/>
 								<span className="QuickAccess__Text">Financial Assistance</span>
 							</Link>
-							<Link to="/app/whistle-blow" className="QuickAccess__NavLink">
-								<img className="QuickAccess__Icon" 
-									src="/svgs/whistle_blower_icon.svg" 
-									alt="whistle blower icon" 
-								/>
-								<span className="QuickAccess__Text">Whistle Blow</span>
-							</Link>
 							<Link to="/app/news" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
 									src="/svgs/news_announcement_icon.svg" 
@@ -56,7 +49,7 @@ const Index = (props) => {
 									src="/svgs/sos_icon.svg" 
 									alt="sos icon" 
 								/>
-								<span className="QuickAccess__Text">SOS</span>
+								<span className="QuickAccess__Text">Distress Call</span>
 							</Link>
 							<Link to="/app/counselling" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
