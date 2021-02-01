@@ -18,45 +18,45 @@ const Index = (props) => {
 						<div className="QuickAccess_NavLinks">
 							<Link to="/app/navigation" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/campus_navigation_icon.svg" 
+									src="/svgs/campus_navigation.svg" 
 									alt="campus navigation icon" 
 								/>
 								<span className="QuickAccess__Text">Campus Navigation</span>
 							</Link>
 							<Link to="/app/hostels" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/hostel_finder_icon.svg" 
+									src="/svgs/hostel_finder.svg" 
 									alt="hostel finder icon" 
 								/>
 								<span className="QuickAccess__Text">Hostel Finder</span>
 							</Link>
 							<Link to="/app/finance" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/financial_assistance_icon.svg" 
+									src="/svgs/financial_assistance.svg" 
 									alt="financial assistance icon" 
 								/>
-								<span className="QuickAccess__Text">Financial Assistance</span>
-							</Link>
-							<Link to="/app/news" className="QuickAccess__NavLink">
-								<img className="QuickAccess__Icon" 
-									src="/svgs/news_announcement_icon.svg" 
-									alt="news icon" 
-								/>
-								<span className="QuickAccess__Text">News & Announcements</span>
+								<span className="QuickAccess__Text">Financial Aid</span>
 							</Link>
 							<Link to="/app/distress" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/sos_icon.svg" 
+									src="/svgs/whistle_blower.svg" 
 									alt="sos icon" 
 								/>
-								<span className="QuickAccess__Text">Distress Call</span>
+								<span className="QuickAccess__Text">Distress Signal</span>
+							</Link>
+							<Link to="/app/news" className="QuickAccess__NavLink">
+								<img className="QuickAccess__Icon" 
+									src="/svgs/news.svg" 
+									alt="news icon" 
+								/>
+								<span className="QuickAccess__Text">News</span>
 							</Link>
 							<Link to="/app/counselling" className="QuickAccess__NavLink">
 								<img className="QuickAccess__Icon" 
-									src="/svgs/campus_navigation_icon.svg" 
+									src="/svgs/campus_navigation.svg" 
 									alt="campus navigation" 
 								/>
-								<span className="QuickAccess__Text">Counselling Assistance</span>
+								<span className="QuickAccess__Text">Counselling</span>
 							</Link>
 						</div>
 					</Paper>
