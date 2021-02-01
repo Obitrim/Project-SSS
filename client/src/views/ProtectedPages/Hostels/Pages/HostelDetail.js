@@ -19,11 +19,11 @@ const Index = (props) => {
 
   return (
    <Container className="HostelDetail__Container">
-   		<Paper elevation={2} className="HostelDetail__ExterialImgBox">
+   		<Paper elevation={2} className="HostelDetail__ExternalImgBox">
    			<img className="ExteriorImg" src="/images/hostel_img.jpg" alt="exterior view" />
    			<div className="HostelDetail__Content">
    				<h1>Hostel Name</h1>
-   				<p>Lorem ipsum dolor sit amet lorem25 consectetur, adipisicing, elit. Deserunt reiciendis, necessitatibus temporibus ad optio ullam.</p>
+   				<p>Lorem ipsum dolor sit amet lorem25 consectetur temporibus ad optio ullam.</p>
    			</div>
    		</Paper>
 		<div className="HostelDetail">
