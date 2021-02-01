@@ -2,6 +2,7 @@
     max-width: 420px;
     border-radius: 20px;
     box-shadow: var(--light-shadow);
+    background-color: var(--white);
     overflow: hidden;
 }
 
