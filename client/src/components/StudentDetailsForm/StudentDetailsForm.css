@@ -5,6 +5,10 @@
 	background-color: var(--white);
 }
 
+.FormGroup--Email {
+	margin-bottom: 1.5em;
+}
+
 .StudentDetails__Form {
 	margin-top: 1rem;
 }
