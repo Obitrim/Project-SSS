@@ -1,9 +1,16 @@
 .NewsCard {
-	overflow: hidden;
 	background-color: var(--white);
+	transition: var(--transition-speed);
+
 	text-decoration: none;
 	color: inherit;
 	font-size: calc(var(--font-size) - 4px);
+
+	overflow: hidden;
+}
+
+.NewsCard:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .NewsCard--Shadow {
