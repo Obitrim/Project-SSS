@@ -1,8 +1,14 @@
 .StudentDetails {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.StudentDetails__Board {
 	max-width: 600px;
 	margin: 2em auto;
-	padding: 1.5em;
 	background-color: var(--white);
+	padding: 1.5em;
+
 }
 
 .FormGroup--Email {
