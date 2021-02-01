@@ -3,8 +3,8 @@
 }
 
 .DistressCall__ImgBox__Img {
-	width: 350px;
-	height: 350px;
+	width: 200px;
+	height: 200px;
 }
 
 .DistressCall__DetailsBox {
@@ -82,4 +82,10 @@
 		max-width: auto;
 		margin: 0;
 	}
+
+	.DistressCall__ImgBox__Img {
+		width: 350px;
+		height: 350px;
+	}
+
 }
