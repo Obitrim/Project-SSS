@@ -11,9 +11,9 @@ const Index = ({onSubmit, heading}) => {
 		<h1 className="ViewHeading">{heading}</h1>
         <Formik
             initialValues={{
-                firstName: '',
-                lastName: '',
-                program: '',
+                firstName: 'Obitrim',
+                lastName: 'Paul',
+                program: 'BSc. Computer Science',
                 level: 100,
                 address: '',
                 phoneNo: '',
@@ -54,6 +54,7 @@ const Index = ({onSubmit, heading}) => {
                                 name="firstName" 
                                 id="firstName"
                                 placeholder="First name"
+                                disabled
                             />
                             <ErrorMessage component="small" className="ErrorLabel" name="firstName"/>
                         </div>
@@ -64,6 +65,7 @@ const Index = ({onSubmit, heading}) => {
                                 name="lastName" 
                                 id="lastName"
                                 placeholder="Last name"
+                                disabled
                             />
                             <ErrorMessage component="small" className="ErrorLabel" name="lastName"/>
                         </div>
@@ -72,7 +74,9 @@ const Index = ({onSubmit, heading}) => {
                             <Field as="select" 
                                 className="FormInput" 
                                 name="program" 
-                                id="program">
+                                id="program"
+                                disabled
+                                >
                                 <option value="" disabled></option>
                                 <option value="computer science">BSc Computer Science</option>
                             </Field>
@@ -114,7 +118,7 @@ const Index = ({onSubmit, heading}) => {
                             />
                             <ErrorMessage component="small" className="ErrorLabel" name="phoneNo"/>
                         </div>
-                         <div className="FormGroup">
+                         <div className="FormGroup FormGroup--Email">
                             <label className="Label" htmlFor="email">Email</label>
                             <Field type="email" 
                                 className="FormInput" 
