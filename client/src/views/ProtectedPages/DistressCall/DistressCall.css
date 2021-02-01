@@ -8,9 +8,10 @@
 }
 
 .DistressCall__DetailsBox {
-	padding: 0 1rem;
+	padding: 2em;
 	max-width: 500px;
 	margin: 2rem auto 0;
+	background-color: var(--white);
 }
 
 .DistressCall__DetailsBox__Info {
