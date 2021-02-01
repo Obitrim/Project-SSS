@@ -1,6 +1,6 @@
 .HostelCard {
     max-width: 420px;
-    border-radius: 20px;
+    border-radius: var(--b-radius);
     box-shadow: var(--light-shadow);
     background-color: var(--white);
     overflow: hidden;
@@ -9,7 +9,7 @@
 .HostelCard__img {
   position: relative;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 1em;
 }
 
 .HostelCard__img::before {
@@ -32,12 +32,12 @@
   height: 170px;
   object-fit: cover;
 
-  border-radius: 1rem;
+  border-radius: calc(var(--b-radius) + 4px);
   box-shadow: 5px 10px 10px #ccc;
 }
 
 .HostelCard__info {
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 10px;
 }
 
@@ -59,14 +59,14 @@
 }
 
 .HostelCard__buttons {
-  display: flex;
-  justify-content: space-between;
   margin-top: 25px;
 }
 
 .HostelCard__Button {
-  padding: 5px;
-  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
   width: 7rem;
   border-width: 1px;
   border-color: var(--danger);
