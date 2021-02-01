@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './DistressCall.css';
 import swal from 'sweetalert';
+import Paper from '@material-ui/core/Paper'
+import Alert from '@material-ui/lab/Alert'
 import Container from '../../../components/Container';
 import SettingsVoiceIcon from '@material-ui/icons/SettingsVoice';
 
@@ -38,11 +40,11 @@ const Index = (props) => {
 				<div className="DistressCall__ImgBox">
 					<img className="DistressCall__ImgBox__Img" src="/svgs/SOS.svg" alt="SOS" />
 				</div>
-				<div className="DistressCall__DetailsBox">
-					<p className="DistressCall__DetailsBox__Info">
-						Send us a signal. <br/> 
+				<Paper elevation={2} className="DistressCall__DetailsBox">
+					<Alert className="DistressCall__DetailsBox__Info" color="info">
+						<h3>Info</h3> 
 						Would you care to tell us the details of your distress?
-					</p>
+					</Alert>
 					<textarea 
 						className="MsgBox" 
 						rows="7" 
@@ -64,7 +66,7 @@ const Index = (props) => {
 							send
 						</button>
 					</div>
-				</div>
+				</Paper>
 			</Container>
 		</div>
 	)
