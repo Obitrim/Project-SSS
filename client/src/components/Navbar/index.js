@@ -50,21 +50,21 @@ const Index = (props) => {
 					to="/app/finance" 
 					activeClassName="ActiveLink">
 					<AccountBalanceRounded/>
-					Financial Assistance
+					Financial Aid
 				</NavLink>
 				<NavLink 
 					className="NavLink" 
 					to="/app/distress-call" 
 					activeClassName="ActiveLink">
 					<AddAlert/>
-					Distress Call
+					Distress Signal
 				</NavLink>
 				<NavLink 
 					className="NavLink" 
 					to="/app/news" 
 					activeClassName="ActiveLink">
 					<AnnouncementRounded/>
-					News & Announcement
+					News
 				</NavLink>
 				<NavLink 
 					className="NavLink" 
