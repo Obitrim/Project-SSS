@@ -11,21 +11,31 @@ let Whistle_blow = require("../models/whistle-blow");
 
 // Attempts to simulate login procedure
 router.post('/login', (req, res) => {
-  let { refNumber, password, username } = req.body;
-  if (!refNumber || !password || !username) {
+  let { refNumber, username, password } = req.body;
+  if (!refNumber || !username) {
     return res.sendStatus(400);
   }
   // Search if user already exists if not, send err
   // if exists compare password
   // if password matches, login user else send error
-  console.log(req.body);
-  let newUser = new UserModel({ ...req.body }).save();
-  // UserModel.findOne({ refNumber, username }, (err, user) => {
-  //   if (err) {
-  //     return res.json({ msg: 'Internal server error', error: true });
-  //   }
-  //   res.status(200).json(user);
-  // })
+  UserModel.findOne({ refNumber, username }, (err, user) => {
+    if (err) {
+      return res.json({ msg: 'Internal server error', error: true });
+    }
+    if (user && user.password != password) {
+      res.status(403).json({
+        error: true,
+        msg: 'Invalid username or password',
+        data: null
+      })
+    } else {
+      res.status(200).json({
+        error: false,
+        msg: 'Logged in successfully',
+        data: user
+      });
+    }
+  })
 });
 
 //this for getting data from the backend for financial assistance
