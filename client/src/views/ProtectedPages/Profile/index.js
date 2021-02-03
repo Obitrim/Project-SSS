@@ -12,7 +12,7 @@ const Index = (props) => {
 	return (
 		<div className="ProfileView">
 			<img className="ProfileView__ProfileImg" src="/svgs/big_profile.svg" alt="profile"/>
-			<h2 className="ProfileView__Name">SURNAME, First Name</h2>
+			<h2 className="ProfileView__Name">{store.user.lastName} {store.user.firstName}</h2>
 			<form className="ProfileView__Form">
 				<input type="text" 
 					name="username" 
