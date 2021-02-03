@@ -88,6 +88,7 @@ const Index = ({onSubmit, heading}) => {
                                     className="FormInput" 
                                     name="level" 
                                     id="level"
+                                    disabled
                                     >
                                     <option value="100">100</option>
                                     <option value="200">200</option>
