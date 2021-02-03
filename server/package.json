@@ -4,6 +4,7 @@
   "description": "this for passenic",
   "main": "server.js",
   "scripts": {
+    "devStart": "nodemon server.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
     "express": "^4.16.4",
     "helmet": "^3.18.0",
     "mongoose": "^5.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

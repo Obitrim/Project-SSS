@@ -14,6 +14,7 @@
 	padding: 2rem;
 	box-shadow: var(--light-shadow);
 	border-radius: var(--b-radius);
+	background-color: var(--white);
 }
 
 .ProfileView__Form .FormGroup {

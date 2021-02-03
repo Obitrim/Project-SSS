@@ -1,14 +1,34 @@
 "use strict";
 const express = require("express");
 const router = express.Router();
-let finAsistance = require("../models/FinancialAs");
+
 let SOS = require("../models/sos");
 let NEWS = require("../models/news");
+let UserModel = require("../models/User");
 let Counselling = require("../models/counselling");
+let finAsistance = require("../models/FinancialAs");
 let Whistle_blow = require("../models/whistle-blow");
 
-//this for getting data from the backend for financial assistance
+// Attempts to simulate login procedure
+router.post('/login', (req, res) => {
+  let { refNumber, password, username } = req.body;
+  if (!refNumber || !password || !username) {
+    return res.sendStatus(400);
+  }
+  // Search if user already exists if not, send err
+  // if exists compare password
+  // if password matches, login user else send error
+  console.log(req.body);
+  let newUser = new UserModel({ ...req.body }).save();
+  // UserModel.findOne({ refNumber, username }, (err, user) => {
+  //   if (err) {
+  //     return res.json({ msg: 'Internal server error', error: true });
+  //   }
+  //   res.status(200).json(user);
+  // })
+});
 
+//this for getting data from the backend for financial assistance
 router.get("/finance", (req, res) => {
   finAsistance.find({}, (err, Finance_data) => {
     if (err) {
