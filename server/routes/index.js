@@ -12,8 +12,12 @@ let Whistle_blow = require("../models/whistle-blow");
 // Attempts to simulate login procedure
 router.post('/login', (req, res) => {
   let { refNumber, username, password } = req.body;
-  if (!refNumber || !username) {
-    return res.sendStatus(400);
+  if (!refNumber || !username || !password) {
+    return res.status(400).json({
+        error: true,
+        msg: 'Invalid user data provided',
+        data: null
+    });
   }
   // Search if user already exists if not, send err
   // if exists compare password
