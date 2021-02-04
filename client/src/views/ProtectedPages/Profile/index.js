@@ -23,7 +23,7 @@ const Index = (props) => {
 				<input type="text" 
 					name="studentNo"
 					className="ProfileView__Form__Input"
-					value={store.user.studentNo}
+					value={store.user.refNumber}
 					readOnly 
 				/>
 				<div className="FormGroup">
@@ -31,7 +31,7 @@ const Index = (props) => {
 						name="phoneNo"
 						className="ProfileView__Form__Input" 
 						onChange={onChangeHandler} 
-						value={store.user.phoneNo}
+						value={store.user.phone}
 					/>
 					<button type="button" className="EditBtn">
 						<img src="/svgs/edit.svg" alt="edit image"/>
