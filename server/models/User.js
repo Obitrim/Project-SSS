@@ -27,12 +27,21 @@ const usersSchema = new mongoose.Schema({
 		length: 8,
 		required: true
 	},
+	phone: {
+		type: String,
+		required: true
+	},
+	email: {
+		type: String,
+		validate: {
+			validator: value => /[a-zA-Z0-9.]{4,}@[a-zA-Z]{3,}\.[a-zA-Z]{2,}/i.test(value),
+			message: props => `${props.email} doe'st match the correct format`
+		}
+	},
 	knustEmail: {
 		type: String,
 		validate: {
-			validator: value => {
-				return /[a-zA-Z0-9.]{4,}@[a-zA-Z]{3,}\.[a-zA-Z]{2,}/i.test(value);
-			},
+			validator: value => /[a-zA-Z0-9.]{4,}@[a-zA-Z]{3,}\.[a-zA-Z]{2,}/i.test(value),
 			message: props => `${props.knustEmail} does't match the correct format`
 		}
 	},
