@@ -5,6 +5,16 @@ export default (state, action) => {
 				...state,
 				sidebarOpen: action.open
 			}
+		case 'LOGIN_USER':
+			return {
+				...state,
+				user: action.user
+			}
+		case 'LOGOUT_USER': 
+			return {
+				...state,
+				user: null
+			}
 		default: 
 			return state
 	}
