@@ -1,21 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import "./ProfileBox.css";
+import React, { useState, useEffect, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+
+import "./ProfileBox.css";
+import { StoreContext } from '../../store';
 
 const Index = (props) => {
 	const history = useHistory();
+	const { dispatch } = useContext(StoreContext);
 	const [profileMenuIsOpen, setProfileMenuIsOpen] = useState(false);
 
 	useEffect(() => {
 		document.body.addEventListener('click', closeProfileMenuHandler);
 		return () => document.body.removeEventListener('click', closeProfileMenuHandler);
 	}, []);
-
+	/**
+	 *
+	 * Closes profile menu box
+	 * @returns {undefined}
+	 */
 	function closeProfileMenuHandler(){
 		showProfileMenu(false);
 	}
-
+	/**
+	 *
+	 * Logs out user and return to login page
+	 * @returns {undefined}
+	 */
 	function logoutUser(){
+		dispatch({ type: 'LOGOUT_USER' });
 		history.push("/");
 	}
 
