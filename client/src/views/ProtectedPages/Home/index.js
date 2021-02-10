@@ -62,6 +62,36 @@ const Index = (props) => {
 					</Paper>
 				</Container>
 			</div>
+			<div className="EmergencyNumbers">
+				<Container className="EmergencyNumbers__Container">
+					<Paper className="EmergencyNumbers__Paper">
+						<h1 className="ViewHeading">KNUST SECURITY SERVICE</h1>
+						<h2 className="ViewSubHeading">Emergency numbers</h2>
+						<div className="NumberCards">
+							<div className="NumberCard">
+								<strong>KNUST Security (Hotline)<br/> <span className="PhoneNumber">(0322-062-999)</span></strong>
+								<a className="NumberCard__CallBtn" href="tel:0322062999">Call</a>
+							</div>
+							<div className="NumberCard">
+								<strong>Police Buffalo<br/> <span className="PhoneNumber">(0322-033-545)</span></strong>
+								<a className="NumberCard__CallBtn" href="tel:0322033545">Call</a>
+							</div>
+							<div className="NumberCard">
+								<strong>KNUST Security (office)<br/> <span className="PhoneNumber">(0332-060-229)</span></strong>
+								<a className="NumberCard__CallBtn" href="tel:0332060229">Call</a>
+							</div>
+							<div className="NumberCard">
+								<strong>Police Information<br/> <span className="PhoneNumber">(0322-022-323)</span></strong>
+								<a className="NumberCard__CallBtn" href="tel:0322022323">Call</a>
+							</div>
+							<div className="NumberCard">
+								<strong>KNUST Police Station<br/> <span className="PhoneNumber">(0322-060-051)</span></strong>
+								<a className="NumberCard__CallBtn" href="tel:0322060051">Call</a>
+							</div>
+						</div>
+					</Paper>
+				</Container>
+			</div>
 		</>
 	)
 }

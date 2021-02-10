@@ -82,6 +82,11 @@
 	opacity: 0.6;
 }
 
+.BackBtn {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
 .MenuIcon,
 .BackArrowIcon {
 	color: var(--white);

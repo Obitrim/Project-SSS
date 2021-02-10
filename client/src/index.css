@@ -46,8 +46,13 @@ input:focus {
 
 .ViewHeading {
 	color: var(--danger);
-	font-weight: 500;
+	font-weight: 600;
 	font-size: calc(var(--font-size) * 1.6);
+}
+
+.ViewSubHeading {
+	font-weight: 500;
+	font-size: calc(var(--font-size) * 1.1);
 }
 
 .V-whitespace {

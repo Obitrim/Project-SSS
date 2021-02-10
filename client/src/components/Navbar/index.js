@@ -1,20 +1,31 @@
 import React, { useEffect, useContext } from 'react';
-import './Navbar.css';
-import { NavLink, useLocation } from 'react-router-dom';
-import { StoreContext } from "../../store";
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { 
 	HomeRounded, HotelRounded, 
 	MapRounded, AccountBalanceRounded, 
 	HelpRounded, AnnouncementRounded, AddAlert
 } from '@material-ui/icons';
 
+import './Navbar.css';
+import { StoreContext } from "../../store";
+
 const Index = (props) => {
+	const history = useHistory();
 	const location = useLocation();
 	const { store, dispatch } = useContext(StoreContext);
 
 	useEffect(() => {
 		dispatch({ type: 'SHOW_SIDEBAR', open: false})
 	}, [location, dispatch]);
+	/**
+	 *
+	 * Logs out user and return to login page
+	 * @returns {undefined}
+	 */
+	function logoutUser(){
+		dispatch({ type: 'LOGOUT_USER' });
+		history.push("/");
+	}
 
 	return (
 		<>
@@ -57,15 +68,15 @@ const Index = (props) => {
 					to="/app/distress-call" 
 					activeClassName="ActiveLink">
 					<AddAlert/>
-					Distress Signal
+					Inform
 				</NavLink>
-				<NavLink 
+				{/**<NavLink 
 					className="NavLink" 
 					to="/app/news" 
 					activeClassName="ActiveLink">
 					<AnnouncementRounded/>
 					News
-				</NavLink>
+				</NavLink>**/}
 				<NavLink 
 					className="NavLink" 
 					to="/app/counselling" 
@@ -73,6 +84,7 @@ const Index = (props) => {
 					<HelpRounded/>
 					Counselling
 				</NavLink>
+				<button className="LogoutBtn" type="button" onClick={logoutUser}>Logout</button>
 			</nav>
 			<div className={`AppNavbar__Overlay ${store.sidebarOpen && 'AppNavbar__Overlay--NavOpen'}`} onClick={() => dispatch({ type: 'SHOW_SIDEBAR', open: false})}></div>
 		</>

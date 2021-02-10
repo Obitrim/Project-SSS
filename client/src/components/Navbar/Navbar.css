@@ -75,14 +75,36 @@
 	background-color: var(--bg-light);
 }
 
+.LogoutBtn {
+	display: block;
+	width: 80%;
+	padding: 0.7rem 1rem;
+	margin: 1em 1em 0;
+
+	font-size: var(--font-size);
+	text-transform: capitalize;
+	border-radius: 5px;
+	background-color: var(--danger) !important;
+	color: var(--white);
+
+	transition: var(--transition-speed);
+}
+
+.LogoutBtn:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
 .Show {
 	left: 0;
 }
 
 @media (min-width: 992px){
 	.AppNavbar {
+		display: flex;
 		height: 100%;
 		width: 100%;
+
 		position: static;
 		background-color: initial;
 		box-shadow: none;
@@ -124,5 +146,16 @@
 
 	.ActiveLink {
 		background-color: var(--danger);
+	}
+
+	.LogoutBtn {
+		width: auto;
+		display: inline-block;
+		background-color: var(--white) !important;
+		color: var(--danger);
+
+		margin-top: 0;
+		margin-left: auto;
+		border-radius: 0;
 	}
 }

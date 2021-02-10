@@ -10,7 +10,7 @@ import {StoreContext} from '../../store';
 
 const Index = (props) => {
 	const history = useHistory();
-	const { dispatch } = useContext(StoreContext);
+	const { dispatch, store } = useContext(StoreContext);
 	/**
 	 *
 	 * Shows alerts for both successfull and failed situations

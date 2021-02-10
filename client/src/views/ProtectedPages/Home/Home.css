@@ -4,15 +4,55 @@
 	margin-top: -0.4em;
 }
 
+.EmergencyNumbers__Paper,
 .QuickAccess__Paper {
 	padding: 2em !important;
 }
 
+.EmergencyNumbers__Container {
+	margin-bottom: 2em !important;
+}
+
+.NumberCards,
 .QuickAccess_NavLinks {
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	margin-top: 1rem;
+}
+
+.NumberCards {
+	grid-gap: 1.5rem 4em;
+	margin-top: 2em;
+}
+
+.NumberCard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.PhoneNumber {
+	font-weight: normal;
+	color: var(--grey);
+	display: inline-block;
+	margin-top: 0.4em;
+}
+
+.NumberCard__CallBtn {
+	display: inline-block;
+	padding: 0.5em 1rem;
+	border-radius: 5rem;
+	background-color: var(--danger);
+	color: var(--white);
+	border: 1px solid var(--danger);
+	transition: var(--transition-speed);
+	text-decoration: none;
+}
+
+.NumberCard__CallBtn:hover {
+	color: var(--danger);
+	background-color: var(--white);
 }
 
 .QuickAccess__NavLink {
@@ -41,4 +81,10 @@
 	margin-top: 0.5rem;
 	text-transform: capitalize;
 	color: var(--dark);
+}
+
+@media (min-width: 768px) {
+	.EmergencyNumbers__Paper {
+		max-width: 50%;
+	}
 }
