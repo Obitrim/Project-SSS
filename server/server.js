@@ -6,66 +6,44 @@ const express = require('express'),
     mongoose = require('mongoose'),
     config = require('./dataconfig'),
     bodyParser = require('body-parser'),
-    userModel = require('./models/User.js');
+    userModel = require('./models/User.js'),
+    hostelModel = require('./models/Hostels.js');
 
 var homeRoute = require('./routes/index');
 var Hostels = require('./routes/Hostels');
 
-// Sample test login data 
-const testUsers = [
-	{
-		username: 'oaorison1',
-		password: '1234orison',
-		refNumber: '30125743',
-		firstName: 'Orison',
-		lastName: 'Ansre',
-		level: 200,
-		program: 'Petrochemical Engineering',
-		phone: '0544933371',
-		email: 'orison@gmail.com',
-		knustEmail: 'orison2@gmail.com'
-	}, {
-		username: 'Zion',
-		password: '1z2i3o4n',
-		refNumber: '2065817',
-		firstName: 'Zion',
-		lastName: 'Ignitious',
-		level: 300,
-		program: 'Natural Resource',
-		phone: '0544946371',
-		email: 'zion@gmail.com',
-		knustEmail: 'zion2@gmail.com'
-	},{
-		username: 'pkobitrim',
-		password: '4odstc34',
-		refNumber: '20521730',
-		firstName: 'Paul',
-		lastName: 'Obitrim',
-		level: 400,
-		program: 'BSc. Computer Science',
-		phone: '0544966371',
-		email: 'paulobitrim@gmail.com',
-		knustEmail: 'pevangelist516@gmail.com'
-	}
-];
+// Sample test data
+const testUsers = require('./test-data/users');
+const testHostels = require('./test-data/hostels');
+/**
+ * inserts intial data into db in the absence of data
+ *
+ * @param {Object} model - model to use
+ * @param {Array} testData - data to insert
+ *
+ * @return {undefined}
+ */
+function insertInitalValues(model, testData) {
+	model.find({}, (err, data) => {
+  		if (err) return console.log(err.message);
+  		if (data && data.length === 0){
+  			model.insertMany(testData, (err, fetchedData) => {
+  				if (err) return console.log(err.message);
+  				console.log(fetchedData, 'Initial state inserted successfully');
+  			})
+  		}
+  	});
+}
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true, useCreateIndex: true});
 const connection = mongoose.connection;
 connection.once('open', () => {
   	console.log('Database is connected') 
-	userModel.find({}, (err, users) => {
-  		if (err) return console.log('Error fetching users');
-  		if (users && users.length === 0){
-  			userModel.insertMany(testUsers, (err, userDocs) => {
-  				if (err) return console.log('Error Inserting users');
-  				console.log(userDocs, 'Users inserted successfully');
-  			})
-  		}
-  	})
+  	insertInitalValues(userModel, testUsers);
+  	insertInitalValues(hostelModel, testHostels);
  });
 connection.on('error', err => console.log('Can not connect to the database'+ err));
-
 
 const app = express();
 app.use(helmet());
