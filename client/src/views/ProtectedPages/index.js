@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
 import AppHome from './Home';
@@ -14,10 +14,12 @@ import NewsAndAnnouncements from './NewsAndAnnouncements';
 import CounsellingAssistance from './CounsellingAssistance';
 
 const Index = (props) => {
-	const { store } = useContext(StoreContext);
+	const { store, dispatch } = useContext(StoreContext);
 
-	if (store.user === null) {
+	if (store.user === null && localStorage.getItem('user') === 'null') {
 		return <Redirect to="/"/>
+	} else {
+		dispatch({ type: 'AUTO_LOGIN_USER' });
 	}
 
 	return (
