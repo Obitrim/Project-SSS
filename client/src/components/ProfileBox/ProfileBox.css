@@ -35,12 +35,16 @@
 	background-color: var(--bg-light);
 }
 
-.ViewProfileBtn {
-	text-decoration: none;
-}
-
 .LogoutBtn {
 	border: none;
 	background-color: transparent;
 	text-align: left;
+}
+
+.ProfileToggler {
+	color: var(--white);
+}
+
+.ProfileToggler + .ProfileToggler {
+	margin-left: 0.5em;
 }

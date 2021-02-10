@@ -3,7 +3,8 @@ import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { 
 	HomeRounded, HotelRounded, 
 	MapRounded, AccountBalanceRounded, 
-	HelpRounded, AnnouncementRounded, AddAlert
+	HelpRounded, AnnouncementRounded, AddAlert,
+	PowerSettingsNew as PowerSettings
 } from '@material-ui/icons';
 
 import './Navbar.css';
@@ -84,7 +85,11 @@ const Index = (props) => {
 					<HelpRounded/>
 					Counselling
 				</NavLink>
-				<button className="LogoutBtn" type="button" onClick={logoutUser}>Logout</button>
+				<button type="button" 
+					className="LogoutBtn"  
+					onClick={logoutUser}>
+					<PowerSettings/> Logout
+				</button>
 			</nav>
 			<div className={`AppNavbar__Overlay ${store.sidebarOpen && 'AppNavbar__Overlay--NavOpen'}`} onClick={() => dispatch({ type: 'SHOW_SIDEBAR', open: false})}></div>
 		</>
