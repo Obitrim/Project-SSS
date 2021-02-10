@@ -3,32 +3,22 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 let Hostel = new Schema({
-  Name: {
+  name: String,
+  location: String,
+  distanceFromCampus: String,
+  images: Array,
+  category: String,
+  rating: Number,
+  phone: {
     type: String,
+    validate: {
+      validator: value => /^(\+233|0)[52][04567]{1}[0-9]{7}/g.test(value),
+      message: props => `${props.Phone} is invalid`
+    }
   },
-  Location: {
-    type: String,
-  },
-  Distance_Campus: {
-    type: String,
-  },
-  Picture: {
-    type: Number,
-  },
-  Category: {
-    type: String,
-  },
-  Rating: {
-    type: String,
-  },
-  Phone: {
-    type: Number,
-  },
-  Facilities: {
-    type: String,
-  },
-  roomtypes: {
-    type: String,
-  },
+  facilities: Array,
+  roomtypes: Array,
+  bookingPortal: String
 });
+
 module.exports = mongoose.model("Hostels", Hostel);
