@@ -1,54 +1,36 @@
-.contents{
-        padding: 5rem;
-        margin : 500px;
-        margin-top: 25px;
-        box-shadow: var(--light-shadow);
+.CampusNavigator__EndPoints {
+    position: fixed;
+    left: 1em;
+    top: calc(var(--header-h) + 1.5em);
+    z-index: 99;
+    padding: 1.5em;
+
+    --input-border-size: 2px;
 }
 
-.content_input{
-    font-size: 1.0rem;
-    padding: 10px;
+.EndPoints__Input {
     display: block;
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-    border: 1.5px solid gray;
-    outline: none;
-    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    min-width: 270px;
+    padding: 0.5rem;
 }
 
-@media(min-width:320px){
-    .contents{
-        padding: 1rem;
-        margin-left:10%;
-        margin-right:10% ;
-    }
+.CampusNavigator .FormGroup {
 }
-@media(min-width:700px) {
-    .contents{
-        padding: 5rem;
-        margin : 50px;
-    }
-    .content_input{
-         width: 100%;
-    }
+
+.FormGroup + .FormGroup {
+    margin-top: 1em;
 }
-@media(min-width:1024px){
-    .contents{
-        padding: 3rem;
-    }
-    .content_input{
-         width: 100%;
-    }
+
+.FormGroup__Label {
+    color: var(--danger);
 }
-@media(min-width:1439px){
-    .contents{
-        padding: 2rem;
-        margin-top: 0;
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-    .content_input{
-         width: 100%;
-    }
+
+.EndPoints__Input--Destination {
+    border-bottom: var(--input-border-size) solid var(--grey);
+}
+
+.EndPoints__Input--Destination:focus {
+    border-color: var(--danger);
 }
