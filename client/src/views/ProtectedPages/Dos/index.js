@@ -1,14 +1,15 @@
-import React from 'react';
+import React from 'react'
+import './Dos.css'
+
 import swal from 'sweetalert';
 
-import "./CounsellingAssistance.css";
 import StudentDetailsForm from '../../../components/StudentDetailsForm';
 
 const Index = (props) => {
   function onSubmit(formik){
     swal({
       title: 'Success',
-      text: 'We are happy to receive your message for Financial assistance. You will hear from us soon',
+      text: 'Your appointment with the Dean Of student has been received. You will hear from us soon',
       icon: 'success'
     }).then(() => {
       formik.resetForm()
@@ -16,11 +17,10 @@ const Index = (props) => {
   }
 
   return (
-    <section className="CounsellingAssistance">
+    <section className="Dos">
     	 <StudentDetailsForm 
-	        heading="Counselling Assistance"
+	        heading="Appointment with Dean Of Student"
 	        onSubmit={onSubmit}
-          counselor
           />
     </section>
   )

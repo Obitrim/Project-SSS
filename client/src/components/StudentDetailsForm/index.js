@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
-const Index = ({onSubmit, heading}) => {
+const Index = ({onSubmit, heading, counselor}) => {
   return (
     <div className="StudentDetails">
         <Paper className="StudentDetails__Board">
@@ -106,7 +106,7 @@ const Index = ({onSubmit, heading}) => {
                                     className="FormInput" 
                                     name="address" 
                                     id="address"
-                                    placeholder="Address"
+                                    placeholder="Address (eg. Kotei, Knust)"
                                 />
                                 <ErrorMessage component="small" className="ErrorLabel" name="address"/>
                             </div>
@@ -130,6 +130,19 @@ const Index = ({onSubmit, heading}) => {
                                 />
                                 <ErrorMessage component="small" className="ErrorLabel" name="email"/>
                             </div>
+                            {counselor && <div className="FormGroup">
+                                <label className="Label" htmlFor="couselor">Choose a Counselor</label>
+                                <Field as="select" 
+                                    className="FormInput" 
+                                    name="counselor" 
+                                    id="counselor"
+                                    >
+                                    <option value="Mr. Asante Opoku">Mr. Asante Opoku</option>
+                                    <option value="Mr. James Tei">Mr. James Tei</option>
+                                    <option value="Ms. Alice Otuu">Ms. Alice Otuu</option>
+                                </Field>
+                                <ErrorMessage component="small" className="ErrorLabel" name="level"/>
+                            </div>}
                         </fieldset>
                         <hr size="2"/>
                         <fieldset className="StudentDetails__Form__DescBox">

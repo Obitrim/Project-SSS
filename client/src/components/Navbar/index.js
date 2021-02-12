@@ -71,13 +71,13 @@ const Index = (props) => {
 					<AddAlert/>
 					Inform
 				</NavLink>
-				{/**<NavLink 
+				<NavLink 
 					className="NavLink" 
-					to="/app/news" 
+					to="/app/appointment-with-DOS" 
 					activeClassName="ActiveLink">
 					<AnnouncementRounded/>
-					News
-				</NavLink>**/}
+					DOS
+				</NavLink>
 				<NavLink 
 					className="NavLink" 
 					to="/app/counselling" 

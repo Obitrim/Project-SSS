@@ -12,6 +12,7 @@ import FinancialAssistance from './FinancialAssistance';
 import HostelDetails from './Hostels/Pages/HostelDetail';
 import NewsAndAnnouncements from './NewsAndAnnouncements';
 import CounsellingAssistance from './CounsellingAssistance';
+import Dos from './Dos'
 
 const Index = (props) => {
 	const { store, dispatch } = useContext(StoreContext);
@@ -35,6 +36,7 @@ const Index = (props) => {
 				<Route path="/app/finance" component={FinancialAssistance}/>
 				<Route path="/app/navigation" component={CampusNavigation}/>
 				<Route path="/app/counselling" component={CounsellingAssistance}/>
+				<Route path="/app/appointment-with-DOS" component={Dos}/>
 			</main>
 		</>
 	)

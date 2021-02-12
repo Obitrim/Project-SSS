@@ -43,13 +43,18 @@ const Index = (props) => {
 				<div className="HostelDetail__facilities">
 					<h2 className="HostelDetail__facilities__title ViewHeading">Facilities</h2>
 					<ul className="HostelDetail__facilities__list">
-						<li><FiberManualRecordIcon fontSize="small"/> Facility 1</li>
+					{
+						detailsOfHostelOfInterest.facilities.map(facility => 
+							<li><FiberManualRecordIcon fontSize="small"/>{facility}</li>
+						)
+					}
+						{/* <li><FiberManualRecordIcon fontSize="small"/> Facility 1</li>
 						<li><FiberManualRecordIcon fontSize="small"/> Facility 2</li>
 						<li><FiberManualRecordIcon fontSize="small"/> Facility 3</li>
 						<li><FiberManualRecordIcon fontSize="small"/> Facility 4</li>
 						<li><FiberManualRecordIcon fontSize="small"/> Facility 5</li>
 						<li><FiberManualRecordIcon fontSize="small"/> Facility 6</li>
-						<li><FiberManualRecordIcon fontSize="small"/> Facility 7</li>
+						<li><FiberManualRecordIcon fontSize="small"/> Facility 7</li> */}
 					</ul>
 				</div>
 				</div>
